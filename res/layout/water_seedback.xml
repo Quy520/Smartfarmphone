@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+	android:background="@color/transparent">
+    
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textSize="16sp"
+	    android:textStyle="bold"
+	    android:textColor="@color/sky_blue"
+	    android:layout_marginTop="10dp"
+	    android:layout_marginLeft="20dp"
+	    android:text="@string/current_water"
+	    android:id="@+id/water_title"/>  
+	    
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textSize="14sp"
+	    android:layout_marginTop="10dp"
+	    android:layout_alignParentRight="true"
+	    android:layout_marginRight="20dp"
+	    android:text="@string/temp_tip"
+	    android:textColor="?textColor"
+	    android:id="@+id/water_tip"
+	    android:visibility="gone"/>  
+    
+	<View 
+	    android:layout_width="match_parent"
+	    android:layout_height="2dp"
+	    android:layout_margin="10dp"
+	    android:background="@color/sky_blue"
+	    android:layout_below="@id/water_title"
+	    android:id="@+id/water_dividing"/>
+	
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:text="@string/load_water"
+        android:textSize="12sp"
+        android:id="@+id/water_btn_load"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:clickable="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/water_dividing"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/btn_selector"/>
+	
+	<TextView 
+	    android:layout_height="30dp"
+	    android:layout_width="match_parent"
+	    android:layout_marginLeft="20dp"
+	    android:textSize="12sp"
+	    android:layout_toLeftOf="@id/water_btn_load"
+	    android:layout_alignBaseline="@id/water_btn_load"
+	    android:id="@+id/water_curr_time"
+	    android:singleLine="true"
+	    android:textColor="?textColor"
+	    android:gravity="center_vertical"/>
+		
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:baselineAligned="false"
+	    android:layout_below="@id/water_btn_load"
+	    android:layout_marginTop="10dp"
+	    android:id="@+id/water_ll">
+	    
+	    <include
+	        layout="@layout/water_item"
+	        android:layout_weight="1"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/water_item1"/>
+	    
+	    <include
+	        layout="@layout/water_item"
+	        android:layout_weight="1"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/water_item2"/>
+	    
+	    <include
+	        layout="@layout/water_item"
+	        android:layout_weight="1"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/water_item3"/>
+	</LinearLayout>
+		
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:baselineAligned="false"
+	    android:layout_below="@id/water_ll"
+	    android:layout_marginTop="10dp"
+	    android:id="@+id/water_ll2">
+	    
+	    <include
+	        layout="@layout/water_item"
+	        android:layout_weight="1"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/water_item4"/>
+	    
+	    <include
+	        layout="@layout/water_item"
+	        android:layout_weight="1"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/water_item5"/>
+	    
+	    <include
+	        layout="@layout/water_item"
+	        android:layout_weight="1"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/water_item6"/>
+	</LinearLayout>
+		
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:baselineAligned="false"
+	    android:layout_below="@id/water_ll2"
+	    android:layout_marginTop="10dp"
+	    android:id="@+id/water_ll3">
+	    
+	    <include
+	        layout="@layout/water_item"
+	        android:layout_weight="1"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/water_item7"/>
+	    
+	    <include
+	        layout="@layout/water_item"
+	        android:layout_weight="1"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/water_item8"/>
+	    
+	    <include
+	        layout="@layout/water_item"
+	        android:layout_weight="1"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/water_item9"/>
+	</LinearLayout>
+
+</RelativeLayout>

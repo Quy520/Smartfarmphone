@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="BaudRate_Var">
+        <item >9600</item>
+        <item >19200</item>
+        <item >115200</item>
+    </string-array>
+    
+    <string-array name="windowCount">
+        <item >2</item>
+        <item >3</item>
+        <item >4</item>
+        <item >5</item>
+        <item >6</item>
+        <item >7</item>
+        <item >8</item>
+    </string-array>
+    
+    <string-array name="temp_push_arrays">
+        <item >5</item>
+        <item >10</item>
+        <item >15</item>
+        <item >30</item>
+        <item >60</item>
+        <item >120</item>
+    </string-array>
+    
+    <string-array name="head_titles">
+	    <item>网络控制</item>
+	    <item>短信控制</item>
+	    <item>参数设置</item>
+    </string-array>
+    
+    <string-array name="waterCount">
+        <item >1</item>
+        <item >2</item>
+        <item >3</item>
+        <item >4</item>
+        <item >5</item>
+        <item >6</item>
+    </string-array>
+    
+    <string-array name="lightCount">
+        <item >2</item>
+        <item >3</item>
+        <item >4</item>
+    </string-array>
+    
+    <string-array name="report_reason">
+        <item>广告</item>
+        <item>色情</item>
+        <item>暴力</item>
+        <item>攻击他人</item>
+        <item>违反相关法律</item>
+        <item>其他</item>
+    </string-array>
+    
+    <string-array name="choose_picture">
+        <item>相册</item>
+        <item>相机</item>
+    </string-array>
+    
+</resources>

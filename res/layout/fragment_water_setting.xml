@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+	android:scrollbars="none"
+	android:id="@+id/scroll"
+    android:background="?containerBackground"
+    android:paddingBottom="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/setting_focus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/base_setting"
+            android:textColor="@color/sky_blue"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="10dp"
+            android:background="@color/sky_blue" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/water_time"
+            android:textColor="?titleColor"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/water_setting_time"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center_vertical"
+            android:inputType="number"
+            android:textColor="?textColor"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="10dp"
+            android:background="@color/grey" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/water_min"
+            android:textColor="?titleColor"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/water_setting_min"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center_vertical"
+            android:inputType="number"
+            android:textColor="?textColor"
+            android:textSize="16sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="10dp"
+            android:background="@color/grey"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/water_count"
+            android:textColor="?titleColor"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/water_setting_count"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:entries="@array/waterCount"
+            android:gravity="center_vertical"
+            android:textColor="?textColor"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="10dp"
+            android:background="@color/grey" />
+        
+		<TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/water_alarm_max"
+            android:textColor="?titleColor"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/alarm_temp_max_descr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center_vertical"
+            android:textColor="?textColor"
+            android:text="@string/water_alarm_max_descr"
+            android:textSize="16sp" />
+        
+        <RelativeLayout
+            android:id="@+id/water_setting_enable_max"
+            style="@style/option_item_rl"
+            android:layout_width="wrap_content"
+            android:background="@color/transparent">
+
+            <com.smartfarm.widget.togglebutton.ToggleButton
+	            android:id="@+id/water_setting_btn_max"
+                style="@style/option_item_toggleButton"
+	            android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"/>
+            
+            <TextView
+                style="@style/option_item_text_parent"
+                android:text="@string/temp_enable"
+            	android:textColor="?titleColor"
+                android:textSize="@dimen/text_size_16"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/water_setting_btn_max"
+                android:layout_alignBaseline="@id/water_setting_btn_max"/>
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/water_setting_alarm_max"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center_vertical"
+            android:inputType="number"
+            android:textColor="?textColor"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="10dp"
+            android:background="@color/grey" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/water_alarm_min"
+            android:textColor="?titleColor"
+            android:textSize="18sp" />
+        
+        <TextView
+            android:id="@+id/alarm_temp_min_descr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center_vertical"
+            android:textColor="?textColor"
+            android:text="@string/water_alarm_min_descr"
+            android:textSize="16sp" />
+        
+        <RelativeLayout
+            android:id="@+id/water_setting_enable_min"
+            style="@style/option_item_rl"
+            android:layout_width="wrap_content"
+            android:background="@color/transparent">
+
+            <com.smartfarm.widget.togglebutton.ToggleButton
+	            android:id="@+id/water_setting_btn_min"
+                style="@style/option_item_toggleButton"
+	            android:layout_alignParentRight="true"
+	            android:layout_marginRight="30dp"/>
+            
+            <TextView
+                style="@style/option_item_text_parent"
+                android:text="@string/temp_enable"
+            	android:textColor="?titleColor"
+                android:textSize="@dimen/text_size_16"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/water_setting_btn_min"
+                android:layout_alignBaseline="@id/water_setting_btn_min"/>
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/water_setting_alarm_min"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center_vertical"
+            android:textColor="?textColor"
+            android:inputType="number"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="10dp"
+            android:background="@color/grey" />
+
+        <TextView
+            android:id="@+id/water_btn_send"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:clickable="true"
+            android:background="@drawable/setting_item_selector"
+            android:gravity="center_vertical"
+            android:text="@string/modify_setting"
+            android:textColor="@color/sky_blue"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="10dp"
+            android:background="@color/grey" />
+
+        <TextView
+            android:id="@+id/water_btn_read"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:clickable="true"
+            android:background="@drawable/setting_item_selector"
+            android:gravity="center_vertical"
+            android:text="@string/read_setting"
+            android:textColor="@color/sky_blue"
+            android:textSize="18sp" />
+        
+    </LinearLayout>
+</ScrollView>

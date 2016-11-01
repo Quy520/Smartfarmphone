@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+	android:background="@color/transparent">
+    
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textSize="16sp"
+	    android:textStyle="bold"
+	    android:textColor="@color/sky_blue"
+	    android:layout_marginTop="10dp"
+	    android:layout_marginLeft="20dp"
+	    android:text="@string/current_tem"
+	    android:id="@+id/nc_title3"/>  
+	    
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textSize="14sp"
+	    android:layout_marginTop="10dp"
+	    android:layout_alignParentRight="true"
+	    android:layout_marginRight="20dp"
+	    android:text="@string/temp_tip"
+	    android:textColor="?textColor"
+	    android:id="@+id/tip"
+	    android:visibility="gone"/>  
+    
+	<View 
+	    android:layout_width="match_parent"
+	    android:layout_height="2dp"
+	    android:layout_margin="10dp"
+	    android:background="@color/sky_blue"
+	    android:layout_below="@id/nc_title3"
+	    android:id="@+id/nc_dividing4"/>
+	
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:text="@string/load_tem"
+        android:textSize="12sp"
+        android:id="@+id/nc_btn_temp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:clickable="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/nc_dividing4"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/btn_selector"/>
+	
+	<TextView 
+	    android:layout_height="30dp"
+	    android:layout_width="match_parent"
+	    android:layout_marginLeft="20dp"
+	    android:textSize="12sp"
+	    android:layout_toLeftOf="@id/nc_btn_temp"
+	    android:layout_alignBaseline="@id/nc_btn_temp"
+	    android:id="@+id/nc_title_current_tem"
+	    android:singleLine="true"
+	    android:textColor="?textColor"
+	    android:gravity="center_vertical"/>
+		
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:baselineAligned="false"
+	    android:layout_below="@id/nc_btn_temp"
+	    android:layout_marginTop="10dp"
+	    android:id="@+id/temp_ll2">
+	    
+	    <com.smartfarm.widget.TempWindow
+	        android:layout_margin="5dp"
+	        android:layout_weight="1"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/temp_win1"/>
+	    
+	    <com.smartfarm.widget.TempWindow
+	        android:layout_margin="5dp"
+	        android:layout_weight="1"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/temp_win2"/>
+	    
+	    <com.smartfarm.widget.TempWindow 
+	        android:layout_margin="5dp"
+	        android:layout_weight="1"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/temp_win3"/>
+	</LinearLayout>
+		
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:baselineAligned="false"
+	    android:layout_below="@id/temp_ll2"
+	    android:layout_marginTop="10dp"
+	    android:id="@+id/temp_ll">
+	    
+	    <com.smartfarm.widget.TempWindow
+	        android:layout_weight="1"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="5dp"
+	        android:id="@+id/temp_win4"/>
+	    
+	    <com.smartfarm.widget.TempWindow
+	        android:layout_weight="1"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="5dp"
+	        android:id="@+id/temp_win5"/>
+	    
+	    <com.smartfarm.widget.TempWindow
+	        android:layout_weight="1"
+	        android:layout_width="0dp"
+	        android:layout_margin="5dp"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/temp_win6"/>
+	</LinearLayout>
+		
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:baselineAligned="false"
+	    android:layout_below="@id/temp_ll"
+	    android:layout_marginTop="10dp"
+	    android:id="@+id/temp_ll3">
+	    
+	    <com.smartfarm.widget.TempWindow
+	        android:layout_weight="1"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="5dp"
+	        android:id="@+id/temp_win7"/>
+	    
+	    <com.smartfarm.widget.TempWindow
+	        android:layout_weight="1"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="5dp"
+	        android:id="@+id/temp_win8"/>
+	    
+	    <com.smartfarm.widget.TempWindow
+	        android:layout_weight="1"
+	        android:layout_width="0dp"
+	        android:layout_margin="5dp"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/temp_win9"/>
+	</LinearLayout>
+
+</RelativeLayout>

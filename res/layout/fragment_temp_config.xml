@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.smartfarm.widget.CustomerScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none" 
+    android:background="?containerBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+		android:background="@color/white"
+		android:paddingTop="20dp"
+		android:paddingBottom="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/temp_more_mode"
+            android:textColor="?titleColor"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center_vertical"
+            android:textColor="?textColor"
+            android:text="@string/temp_more_mode_descr"
+            android:textSize="16sp" />
+        
+        <RelativeLayout
+            android:id="@+id/more_mode_switch"
+            style="@style/option_item_rl"
+            android:layout_width="wrap_content"
+            android:background="@color/transparent">
+
+            <com.smartfarm.widget.togglebutton.ToggleButton
+	            android:id="@+id/more_mode_toggle"
+                style="@style/option_item_toggleButton"
+	            android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"/>
+            
+            <TextView
+                style="@style/option_item_text_parent"
+                android:text="@string/temp_enable"
+            	android:textColor="?titleColor"
+                android:textSize="@dimen/text_size_16"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/more_mode_toggle"
+                android:layout_alignBaseline="@id/more_mode_toggle"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/select_window_id_title"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:textColor="?titleColor"
+	        android:textSize="@dimen/text_size_18"
+	        android:layout_marginTop="20dp"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginRight="20dp"
+	        android:text="@string/select_window"/>
+
+        <Spinner
+            android:id="@+id/select_window_id"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+	        android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center_vertical"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+	        android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/highest_tem"
+            android:textColor="?titleColor"
+            android:textSize="18sp" />
+
+        <TextView
+	        android:id="@+id/tc_max_temp_descr"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:textColor="@color/main_gray"
+	        android:textSize="@dimen/text_size_16"
+	        android:layout_marginTop="20dp"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginRight="20dp"
+	        android:text="@string/max_temp_descr"/>
+	
+	    <EditText
+	        android:id="@+id/tc_max_temp"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="20dp"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginRight="20dp"
+	        android:inputType="number"
+	        android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+	        android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/difference_upper_limit"
+            android:textColor="?titleColor"
+            android:textSize="18sp" />
+
+        <TextView
+	        android:id="@+id/tc_nmax_temp_descr"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:textColor="@color/main_gray"
+	        android:textSize="@dimen/text_size_16"
+	        android:layout_marginTop="20dp"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginRight="20dp"
+	        android:text="@string/max_nor_temp_descr"/>
+	
+	    <EditText
+	        android:id="@+id/tc_max_nor_temp"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="20dp"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginRight="20dp"
+	        android:inputType="number"
+	        android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+	        android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/difference_lower_limit"
+            android:textColor="?titleColor"
+            android:textSize="18sp" />
+
+        <TextView
+	        android:id="@+id/tc_nmin_temp_descr"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:textColor="@color/main_gray"
+	        android:textSize="@dimen/text_size_16"
+	        android:layout_marginTop="20dp"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginRight="20dp"
+	        android:text="@string/min_nor_temp_descr"/>
+	
+	    <EditText
+	        android:id="@+id/tc_min_nor_temp"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="20dp"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginRight="20dp"
+	        android:inputType="number"
+	        android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+	        android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/lowest_tem"
+            android:textColor="?titleColor"
+            android:textSize="18sp" />
+
+        <TextView
+	        android:id="@+id/tc_min_temp_descr"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:textColor="@color/main_gray"
+	        android:textSize="@dimen/text_size_16"
+	        android:layout_marginTop="20dp"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginRight="20dp"
+	        android:text="@string/min_nor_temp_descr"/>
+	
+	    <EditText
+	        android:id="@+id/tc_min_temp"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="20dp"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginRight="20dp"
+	        android:layout_marginBottom="20dp"
+	        android:inputType="number"
+	        android:textSize="14sp" />
+
+    </LinearLayout>
+
+</com.smartfarm.widget.CustomerScrollView>

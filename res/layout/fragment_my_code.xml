@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+        android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/me_btn_user"
+        style="@style/option_item_rl"
+        android:layout_marginTop="20dp">
+
+
+    	<com.smartfarm.widget.AvatarView
+            android:id="@+id/me_iv_user"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@string/hello_world"
+            android:src="@drawable/default_user_face"
+			android:layout_marginLeft="30dp" />
+
+        <TextView
+            android:id="@+id/me_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/find_circle"
+            android:textColor="@color/main_black"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/me_tv_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/me_tv_name"
+            android:layout_below="@id/me_tv_name"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/find_circle"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/text_size_14" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/code_iv_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/code_demo"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:contentDescription="@string/hello_world"/>
+    
+    <TextView 
+        android:id="@+id/code_tv_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/gray"
+        android:text="@string/user_code_tip"/>
+
+</LinearLayout>

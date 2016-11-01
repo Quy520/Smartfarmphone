@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="?containerBackground"
+    android:orientation="vertical"
+    tools:context=".SmartFarm" >
+
+    <include
+        android:id="@+id/main_notice"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        layout="@layout/net_notice_view"
+        android:visibility="gone" />
+
+    <com.smartfarm.widget.PagerSlidingTabStrip
+        android:id="@+id/pager_tabstrip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?stripBg"
+        app:allowWidthFull="true"
+        app:disableViewPager="false"
+        app:slidingBlock="@drawable/image_sliding_block" />
+    
+<!--     <fragment
+        android:id="@+id/main_temp_fragment"
+        android:name="com.smartfarm.fragment.TempControlFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start" /> -->
+
+
+    
+    <fragment
+        android:id="@+id/main_temp_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:name="com.smartfarm.fragment.TempControlFragment"
+         />
+<!--
+    <com.smartfarm.widget.MyFragmentTabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?titleBgColor" />
+    -->
+
+</LinearLayout>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.smartfarm.widget.CustomerScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/find_btn_circle"
+            style="@style/option_item_rl"
+			android:layout_marginTop="20dp">
+
+            <ImageView 
+                android:id="@+id/find_iv_cilcle"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/find_circle_icon"
+                android:contentDescription="@string/hello_world"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"/>
+            
+            <TextView
+                style="@style/option_item_text_parent"
+                android:text="@string/find_circle"
+                android:textColor="@color/main_black"
+                android:textSize="@dimen/text_size_16"
+				android:layout_toRightOf="@id/find_iv_cilcle"
+				android:layout_marginLeft="10dp"/>
+        </RelativeLayout>
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/space_8"
+            android:layout_marginRight="@dimen/space_8"
+            android:background="@color/list_divider_color" />
+
+        <RelativeLayout
+            android:id="@+id/find_btn_activity"
+            style="@style/option_item_rl"
+			android:layout_marginTop="20dp">
+
+            <ImageView 
+                android:id="@+id/find_iv_activity"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/find_activity_icon"
+                android:contentDescription="@string/hello_world"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"/>
+            
+            <TextView
+                style="@style/option_item_text_parent"
+                android:text="@string/find_activity"
+                android:textColor="@color/main_black"
+                android:textSize="@dimen/text_size_16"
+				android:layout_toRightOf="@id/find_iv_activity"
+				android:layout_marginLeft="10dp" />
+        </RelativeLayout>
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/space_8"
+            android:layout_marginRight="@dimen/space_8"
+            android:background="@color/list_divider_color" />
+
+        <RelativeLayout
+            android:id="@+id/find_btn_friend"
+            style="@style/option_item_rl">
+
+            <ImageView 
+                android:id="@+id/find_iv_friend"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/find_new_icon"
+                android:contentDescription="@string/hello_world"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                style="@style/option_item_text_parent"
+                android:text="@string/find_friend"
+                android:textColor="@color/main_black"
+                android:textSize="@dimen/text_size_16"
+				android:layout_toRightOf="@id/find_iv_friend"
+				android:layout_marginLeft="10dp"  />
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/find_btn_scan"
+            style="@style/option_item_rl"
+            android:layout_marginTop="20dip" >
+
+            <ImageView 
+                android:id="@+id/find_iv_scan"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/find_scan_icon"
+                android:contentDescription="@string/hello_world"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"/>
+            
+            <TextView
+                style="@style/option_item_text_parent"
+                android:text="@string/find_scan"
+                android:textColor="@color/main_black"
+                android:textSize="@dimen/text_size_16"
+				android:layout_toRightOf="@id/find_iv_scan"
+				android:layout_marginLeft="10dp"  />
+        </RelativeLayout>
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/space_8"
+            android:layout_marginRight="@dimen/space_8"
+            android:background="@color/list_divider_color" />
+
+        <RelativeLayout
+            android:id="@+id/find_btn_mall"
+            style="@style/option_item_rl" >
+
+            <ImageView 
+                android:id="@+id/find_iv_mall"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/find_mall_icon"
+                android:contentDescription="@string/hello_world"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                style="@style/option_item_text_parent"
+                android:text="@string/find_mall"
+                android:textColor="@color/main_black"
+                android:textSize="@dimen/text_size_16" 
+				android:layout_toRightOf="@id/find_iv_mall"
+				android:layout_marginLeft="10dp" />
+        </RelativeLayout>
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/space_8"
+            android:layout_marginRight="@dimen/space_8"
+            android:background="@color/list_divider_color" />
+
+        <RelativeLayout
+            android:id="@+id/find_btn_pesticide"
+            style="@style/option_item_rl" >
+
+            <ImageView 
+                android:id="@+id/find_iv_pesticide"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/find_pesticide_icon"
+                android:contentDescription="@string/hello_world"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                style="@style/option_item_text_parent"
+                android:text="@string/find_pesticide"
+                android:textColor="@color/main_black"
+                android:textSize="@dimen/text_size_16" 
+				android:layout_toRightOf="@id/find_iv_pesticide"
+				android:layout_marginLeft="10dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</com.smartfarm.widget.CustomerScrollView>

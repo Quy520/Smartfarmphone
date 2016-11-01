@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/menu_item_user"
+        style="@style/MenuItemLayoutStyleWrite" >
+
+        
+	    <com.smartfarm.widget.AvatarView
+	        android:id="@+id/user_face"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/default_user_face"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="start"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/user_name"
+            android:textColor="?textColor"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:visibility="gone"
+        android:background="#d2d2d2" />
+    
+    <TextView
+        android:id="@+id/menu_item_news"
+        style="@style/navi_item_text"
+        android:visibility="gone"
+        android:drawableLeft="@drawable/menu_home"
+        android:text="@string/item_news" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#d2d2d2" />
+
+    <TextView
+        android:id="@+id/menu_item_water"
+        style="@style/navi_item_text"
+        android:drawableLeft="@drawable/menu_water"
+        android:text="@string/item_water"
+        android:visibility="gone"/>
+
+    <View
+        android:id="@+id/menu_item_water_dividing"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#d2d2d2"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/menu_item_light"
+        style="@style/navi_item_text"
+        android:drawableLeft="@drawable/menu_light"
+        android:text="@string/item_light"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/menu_item_light_dividing"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#d2d2d2"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/menu_item_peng"
+        style="@style/navi_item_text"
+        android:drawableLeft="@drawable/menu_peng"
+        android:text="@string/peng_manager" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#d2d2d2" />
+
+    <TextView
+        android:id="@+id/menu_item_history"
+        style="@style/navi_item_text"
+        android:drawableLeft="@drawable/menu_history"
+        android:text="@string/history" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#d2d2d2" />
+
+    <TextView
+        android:id="@+id/menu_item_about"
+        style="@style/navi_item_text"
+        android:drawableLeft="@drawable/menu_about"
+        android:text="@string/about" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#d2d2d2" />
+
+    <TextView
+        android:id="@+id/menu_item_help"
+        style="@style/navi_item_text"
+        android:drawableLeft="@drawable/menu_help"
+        android:text="@string/help" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#d2d2d2" />
+    <TextView
+        android:id="@+id/add"
+        style="@style/navi_item_text"
+       
+        android:text="扫码" />
+
+</LinearLayout>

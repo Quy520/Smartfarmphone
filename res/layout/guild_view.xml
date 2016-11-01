@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/guild_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <android.support.v4.view.PagerTitleStrip
+            android:id="@+id/guild_pagertitle"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="bottom"
+            android:background="#0000"
+            android:textColor="#ffff" />
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:gravity="center_horizontal" 
+        android:id="@+id/guild_cursor_container"/>
+
+        <!-- <ImageView
+            android:id="@+id/guild_page0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/hello_world"
+            android:scaleType="matrix"
+            android:src="@drawable/guild_cursor_selector" /> -->
+	<Button
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:minWidth="50dp"
+	    android:gravity="center"
+	    android:paddingRight="30dp"
+	    android:paddingLeft="30dp"
+	    android:textSize="16sp"
+	    android:text="@string/guild_ok"
+	    android:id="@+id/guild_ok"
+	    android:layout_alignParentBottom="true"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginBottom="10dp"
+	    android:background="@drawable/guild_ok_btn_selector"
+	    android:visibility="gone"/>
+	    
+	<CheckBox 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:minWidth="50dp"
+	    android:gravity="center"
+	    android:textSize="14sp"
+	    android:textColor="#0000ff"
+	    android:layout_marginRight="30dp"
+	    android:layout_marginLeft="30dp"
+	    android:layout_marginBottom="10dp"
+	    android:layout_centerHorizontal="true"
+	    android:text="@string/guild_ok"
+	    android:id="@+id/guild_protocol"
+	    android:layout_above="@id/guild_ok"
+	    android:visibility="gone"/>
+</RelativeLayout>

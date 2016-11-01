@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.smartfarm.widget.CustomerScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/sys_setting_sound"
+            style="@style/option_item_rl"
+            android:layout_marginTop="20dip" >
+
+            <TextView
+                style="@style/option_item_text_parent"
+                android:text="@string/msg_sound"
+                android:textColor="@color/main_black"
+                android:textSize="@dimen/text_size_16"/>
+
+            <com.smartfarm.widget.togglebutton.ToggleButton
+	            android:id="@+id/sys_setting_btn_sound"
+                style="@style/option_item_toggleButton"
+	            android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/space_8"
+            android:layout_marginRight="@dimen/space_8"
+            android:background="@color/list_divider_color" />
+
+        <RelativeLayout
+            android:id="@+id/sys_setting_vibrate"
+            style="@style/option_item_rl">
+
+            <TextView
+                style="@style/option_item_text_parent"
+                android:text="@string/msg_vibrate"
+                android:textColor="@color/main_black"
+                android:textSize="@dimen/text_size_16"/>
+
+            <com.smartfarm.widget.togglebutton.ToggleButton
+	            android:id="@+id/sys_setting_btn_vibrate"
+                style="@style/option_item_toggleButton"
+	            android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/space_8"
+            android:layout_marginRight="@dimen/space_8"
+            android:background="@color/list_divider_color" />
+
+        <RelativeLayout
+            android:id="@+id/sys_setting_net"
+            style="@style/option_item_rl">
+
+            <TextView
+                style="@style/option_item_text_parent"
+                android:text="@string/msg_net"
+                android:textColor="@color/main_black"
+                android:textSize="@dimen/text_size_16"/>
+
+            <com.smartfarm.widget.togglebutton.ToggleButton
+	            android:id="@+id/sys_setting_btn_net"
+                style="@style/option_item_toggleButton"
+	            android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/space_8"
+            android:layout_marginRight="@dimen/space_8"
+            android:background="@color/list_divider_color"
+            android:visibility="gone"/>
+
+        <RelativeLayout
+            android:id="@+id/sys_setting_water"
+            style="@style/option_item_rl"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/option_item_text_parent"
+                android:text="@string/water_enable_title"
+                android:textColor="@color/main_black"
+                android:textSize="@dimen/text_size_16"/>
+
+            <com.smartfarm.widget.togglebutton.ToggleButton
+	            android:id="@+id/sys_setting_btn_water"
+                style="@style/option_item_toggleButton"
+	            android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/space_8"
+            android:layout_marginRight="@dimen/space_8"
+            android:background="@color/list_divider_color"
+            android:visibility="gone"/>
+
+        <RelativeLayout
+            android:id="@+id/sys_setting_light"
+            style="@style/option_item_rl"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/option_item_text_parent"
+                android:text="@string/light_enable_title"
+                android:textColor="@color/main_black"
+                android:textSize="@dimen/text_size_16"/>
+
+            <com.smartfarm.widget.togglebutton.ToggleButton
+	            android:id="@+id/sys_setting_btn_light"
+                style="@style/option_item_toggleButton"
+	            android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/space_8"
+            android:layout_marginRight="@dimen/space_8"
+            android:background="@color/list_divider_color" />
+
+        <RelativeLayout
+            android:id="@+id/sys_setting_welcome"
+            style="@style/option_item_rl">
+
+            <TextView
+                style="@style/option_item_text_parent"
+                android:text="@string/setting_welcome"
+                android:textColor="@color/main_black"
+                android:textSize="@dimen/text_size_16"/>
+
+            <com.smartfarm.widget.togglebutton.ToggleButton
+	            android:id="@+id/sys_setting_btn_welcome"
+                style="@style/option_item_toggleButton"
+	            android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/sys_setting_about"
+            style="@style/option_item_rl"
+            android:layout_marginTop="20dip" >
+
+            <TextView
+                style="@style/option_item_text_parent"
+                android:text="@string/about"
+                android:textColor="@color/main_black"
+                android:textSize="@dimen/text_size_16" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/space_8"
+            android:layout_marginRight="@dimen/space_8"
+            android:background="@color/list_divider_color" />
+
+        <RelativeLayout
+            android:id="@+id/sys_setting_exit"
+            style="@style/option_item_rl" >
+
+            <TextView
+                android:id="@+id/setting_logout"
+                style="@style/option_item_text_parent"
+                android:text="@string/menu_exit_app"
+                android:textColor="@color/main_black"
+                android:textSize="@dimen/text_size_16" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</com.smartfarm.widget.CustomerScrollView>

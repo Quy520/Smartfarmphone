@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.smartfarm.widget.CustomerScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none"
+	android:background="@color/white">
+    
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout 
+	        android:id="@+id/user_detail_btn_face"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+	        android:clickable="true"
+	        android:background="@drawable/list_item_background">
+            
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="15sp"
+	            android:layout_marginLeft="20dp"
+	            android:layout_centerVertical="true"
+	            android:text="@string/user_detail_face"
+	            android:drawableLeft="@drawable/xing"
+	            android:drawablePadding="5dp"/>
+            
+
+		    <com.smartfarm.widget.AvatarView
+		        android:id="@+id/user_face"
+	            android:layout_width="60dp"
+	            android:layout_height="60dp"
+	            android:layout_centerVertical="true"
+	            android:layout_marginRight="20dp"
+	            android:layout_alignParentRight="true"
+	            android:contentDescription="@null"
+	            android:src="@drawable/default_user_face" />
+	        
+        </RelativeLayout>
+    
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/list_divider_color"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <RelativeLayout 
+	        android:id="@+id/user_detail_btn_name"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+	       	android:clickable="true"
+	        android:background="@drawable/list_item_background">
+            
+	        <TextView 
+	            android:id="@+id/user_detail_name"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="15sp"
+	            android:layout_marginLeft="20dp"
+	            android:layout_centerVertical="true"
+	            android:text="@string/user_detail_name"
+	            android:drawableLeft="@drawable/xing"
+	            android:drawablePadding="5dp"/>
+            
+            <TextView 
+	            android:id="@+id/user_detail_name_content"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="14sp"
+	            android:textColor="@color/main_gray"
+	            android:layout_centerVertical="true"
+	            android:layout_marginRight="20dp"
+	            android:layout_alignParentRight="true"
+	            android:text="@string/user_detail_null"/>
+	        
+        </RelativeLayout>
+    
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/list_divider_color"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <RelativeLayout 
+	        android:id="@+id/user_detail_btn_account"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+	       	android:clickable="true"
+	        android:background="@drawable/list_item_background">
+            
+	        <TextView 
+	            android:id="@+id/user_detail_account"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="15sp"
+	            android:layout_marginLeft="20dp"
+	            android:layout_centerVertical="true"
+	            android:text="@string/user_detail_account"
+	            android:drawableLeft="@drawable/xing"
+	            android:drawablePadding="5dp"/>
+            
+            <TextView 
+	            android:id="@+id/user_detail_account_content"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="14sp"
+	            android:textColor="@color/main_gray"
+	            android:layout_centerVertical="true"
+	            android:layout_marginRight="20dp"
+	            android:layout_alignParentRight="true"
+	            android:text="@string/user_detail_null"/>
+	        
+        </RelativeLayout>
+    
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/list_divider_color"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <RelativeLayout 
+	        android:id="@+id/user_detail_btn_addr"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+	       	android:clickable="true"
+	        android:background="@drawable/list_item_background">
+            
+	        <TextView 
+	            android:id="@+id/user_detail_addr"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="15sp"
+	            android:layout_marginLeft="20dp"
+	            android:layout_centerVertical="true"
+	            android:text="@string/user_detail_addr"
+	            android:drawableLeft="@drawable/xing"
+	            android:drawablePadding="5dp"/>
+            
+            <TextView 
+	            android:id="@+id/user_detail_addr_content"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="14sp"
+	            android:textColor="@color/main_gray"
+	            android:layout_centerVertical="true"
+	            android:layout_marginRight="20dp"
+	            android:layout_alignParentRight="true"
+	            android:text="@string/user_detail_null"/>
+	        
+        </RelativeLayout>
+    
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/list_divider_color"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <RelativeLayout 
+	        android:id="@+id/user_detail_btn_sex"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+	       	android:clickable="true"
+	        android:background="@drawable/list_item_background">
+            
+	        <TextView 
+	            android:id="@+id/user_detail_sex"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="15sp"
+	            android:layout_marginLeft="20dp"
+	            android:layout_centerVertical="true"
+	            android:text="@string/user_detail_sex"
+	            android:drawableLeft="@drawable/xing"
+	            android:drawablePadding="5dp"/>
+            
+            <TextView 
+	            android:id="@+id/user_detail_sex_content"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="14sp"
+	            android:textColor="@color/main_gray"
+	            android:layout_centerVertical="true"
+	            android:layout_marginRight="20dp"
+	            android:layout_alignParentRight="true"
+	            android:text="@string/user_detail_null"/>
+	        
+        </RelativeLayout>
+    
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/list_divider_color"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <TextView 
+            android:id="@+id/user_detail_btn_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+       		android:clickable="true"
+       		android:gravity="center_vertical|left"
+        	android:background="@drawable/list_item_background"
+            android:textSize="15sp"
+			android:paddingLeft="20dp"
+            android:text="@string/user_detail_pwd"
+            android:drawableLeft="@drawable/xing"
+            android:drawablePadding="5dp"/>
+         
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/list_divider_color"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+        
+    </LinearLayout>
+    
+</com.smartfarm.widget.CustomerScrollView>

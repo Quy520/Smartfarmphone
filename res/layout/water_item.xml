@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<ImageView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/water_state"
+	    android:src="@drawable/water_state"
+	    android:contentDescription="@string/hello_world"
+	    android:layout_gravity="center_horizontal"/>
+	
+	<TextView 
+	    android:id="@+id/water_id"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textSize="16sp"
+	    android:gravity="center"
+	    android:textColor="?attr/textColor"
+	    android:layout_gravity="center_horizontal"/>
+	
+	<TextView 
+	    android:id="@+id/water_value"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:drawableLeft="@drawable/water_icon"
+	    android:textSize="16sp"
+	    android:textColor="@color/sky_blue"
+	    android:layout_gravity="center_horizontal"
+	    android:drawablePadding="5dp"
+	    android:layout_marginTop="5dp"
+	    android:gravity="center"/>
+	
+	<TextView 
+	    android:id="@+id/water_temp"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:drawableLeft="@drawable/water_temp"
+	    android:textSize="16sp"
+	    android:textColor="@color/orange"
+	    android:layout_gravity="center_horizontal"
+	    android:drawablePadding="5dp"
+	    android:layout_marginTop="5dp"
+	    android:gravity="center"/>
+	
+</LinearLayout>

@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:shzt="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_add"
+        android:title="@string/gh_add"
+        android:visible="true"
+        shzt:showAsAction="always"/>
+
+</menu>

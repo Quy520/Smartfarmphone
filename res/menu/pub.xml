@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:shzt="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_pub"
+        android:title="@string/submit"
+        android:visible="true"
+        shzt:showAsAction="always"/>
+
+</menu>

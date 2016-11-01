@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:shzt="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/cm_refresh"
+        android:title="@string/refresh"
+        android:visible="true"
+       	shzt:showAsAction="collapseActionView"/>
+    <item
+        android:id="@+id/cm_share"
+        android:title="@string/share"
+        android:visible="true"
+       	shzt:showAsAction="collapseActionView"/>
+    <item
+        android:id="@+id/cm_scan"
+        android:title="@string/find_scan"
+        android:visible="true"
+       	shzt:showAsAction="collapseActionView"/>
+    <item
+        android:id="@+id/cm_search"
+        android:title="@string/search"
+        android:visible="true"
+       	shzt:showAsAction="collapseActionView"/>
+</menu>

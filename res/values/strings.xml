@@ -1,0 +1,670 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">上海洲涛智能大棚</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_modify">编辑</string>
+    
+    <!--material icons字体图标对应-->
+    <string name="icon_temp">&#xE893;</string>
+    <string name="icon_menu">&#xE5D2;</string>
+    <string name="icon_keyboard_arrow_down">&#xE313;</string>
+    <string name="icon_error">&#xE000;</string>
+    <string name="icon_check_circle">&#xE86c;</string>
+    
+    <string name="update_log_title">更新日志</string>
+    <string name="update_log">
+		  1.优化本地储存机制，添加大棚管理、温度管理以及报警管理等界面用于用户查看概览或历史信息。\n
+		2.夜间模式下将不会报警。\n
+		3.修改风口状态改为显示拉动距离，相关电机运转时间改为首档拉动距离和最大拉动距离。\n
+        4.添加欢迎界面和引导界面。\n
+		5.将风口可设置数目修改为2-8路。\n
+		6.优化UI，添加夜间模式效果。
+		7.添加报警温度及推送温度时间的设定与同步。</string>
+	
+	<string name="tip_save_image_suc">图片已保存(手机相册-> saveImg)</string>
+	<string name="tip_save_image_faile">无法保存图片</string>
+	<string name="tip_load_image_faile">加载图片失败</string>
+	
+	<string name="down_state">正在下载：%s</string>
+	<string name="copy_success">复制成功</string>
+    
+	<!-- 帮助页面信息 start -->
+    <string name="help_title_precautions">注意事项</string>
+    <string name="help_title_net_temp">网络读取温度</string>
+    <string name="help_title_net_win">网络控制窗口</string>
+    <string name="help_title_net_relink">重新连接网络</string>
+    <string name="help_title_net_diagnosis">网络诊断功能</string>
+    <string name="help_title_net_alarm">智能报警功能</string>
+    <string name="help_title_net_mode">网络控制切换控制模式</string>
+    <string name="help_title_net_syn">同步参数功能</string>
+    <string name="help_title_net_ven">一键通风功能</string>
+    <string name="help_title_msg_temp">短信控制读取温度</string>
+    <string name="help_title_msg_control">短信控制功能</string>
+    <string name="help_title_msg_cmd">短信指令</string>
+    <string name="help_title_setting">参数配置</string>
+    <string name="help_title_set_win">窗口数量设置</string>
+    <string name="help_title_set_house">多大棚管理功能</string>
+    <string name="help_title_share">分享功能</string>
+    <string name="help_title_set_function">功能设置</string>
+    
+    <string name="help_content_precautions">(1) 软件使用时，请先配置主手机号码（即本机号码）以及温控机手机号码，然后会自动匹配网络连接温控机。\r\n
+		(2) 网络控制通过网络进行控制，这将会使用一定量的数据流量，请注意打开数据连接。\r\n
+		(3) 短信控制通过短信进行控制，这将会发送短信来达到控制的目的。部分手机会有权限提示，需要允许本软件发送及读取短信的权限才能正常工作。\r\n
+		(4) 软件应使用自己的手机号码，同时一个手机号码只能有一个在线，若其他地方使用该号码登录则会将上一个地点自动离线。\r\n
+		(5) 手机端可以添加多个大棚进行同时操作，若添加了多个大棚，则在哪个大棚的选项卡之下，所有的操作都是针对该大棚的。若要操作其他大棚则需要切换大棚选项卡的选项。\r\n
+		(6) 我们不做任何形式的保证, 因网络状况、通讯线路、服务器当机、自然灾害等非可抗力因素而导致用户不能正常使用或温控机不能正常工作，我们也不承担任何法律责任。\r\n
+	</string>
+	<string name="help_content_net_temp">
+	1.首先配置好主手机号以及温控机号码。\r\n
+	2.在网络控制界面点击读取温度按钮，这样温控机就会将当前温度及风口状态发送至手机，然后手机就会在显示区域显示当前温度以及风口状态信息。 同时最后收到温度时间也会更新到新的时间 。\r\n
+	3.当手机收到来自温控机的温度信息之后，会在通知栏中显示大棚、温度信息以及风口状态信息。\r\n
+	</string>
+	<string name="help_content_net_win">
+	1.首先配置好主手机号以及温控机号码。\r\n
+	2.在网络控制界面勾选需要操作的窗口。 \r\n
+	3.根据控制类型点击不同的控制按钮。\r\n
+	</string>
+	<string name="help_content_net_relink">
+	1.连接状态区域显示当前与服务器的连接状态，正常连接上服务器则显示已连接上网络。 当显示未连接时表示与服务器断开连接，请点击重连按钮进行重连，若还是不能连接请使用网络诊断功能。\r\n
+	</string>
+	<string name="help_content_net_diagnosis">
+	1.当长时间失去某个大棚温控机的响应时，会显示失去连接的通知，点击最右边的按钮，可以关闭该通知，点击该通知其他位置则会打开网络诊断功能诊断当前网络的问题所在。\r\n
+	2.也可以在网络诊断功能区域手动点击按钮来启动网络诊断功能。\r\n
+	3.当开启网络诊断功能后，会依次对本地网络状况以及和服务器的连接以及温控机的连接进行检查 。\r\n
+	4.当检查完毕后会提示本次诊断的结果供用户参考。\r\n
+	</string>
+	<string name="help_content_net_alarm">
+	1.温控机会去定时检查温度，当连续10分钟温度过高或过低或无法读取到，那么就会向客户的手机端发送网络报警消息，同时发送一条报警短信。
+	三次之后会增加到每半小时报一次警。当能正常收到消息会重置报警次数，下次出现报警依然会是连续10分钟异常触发报警。\r\n
+	2.当某一条链路无法连通时也会发出报警，报警机制与之前相同，若所有链路都不同则可能是停电所致。\r\n
+	3.当温控机在接电状态下失去电源会触发一个停电报警，该报警一次只发一次，但是在下次接电后再次停电会再次产生一个停电报警。\r\n
+	4.当手机收到报警后会产生一个通知并发出报警声音，每个大棚独立拥有一个报警通知以保证不会被其他大棚的报警覆盖。\r\n
+	5.报警通知会显示是哪个大棚发来的报警，显示在“来自”之后。\r\n
+	</string>
+	<string name="help_content_net_mode">
+	1.切换按钮为蓝色和显示自动模式表示现在正处于自动模式，切换按钮为灰色和显示手动模式表示现在正处于手动模式。\r\n
+	2.点击可以将模式相互转换。\r\n
+	</string>
+	<string name="help_content_net_syn">
+	1.点击同步按钮即可将参数设置中除温控机号码及主手机号码之外所有数据都同步到温控机端。\r\n
+	2.点击按钮后会显示一个确认框，确认同步则点击确定进行同步。 \r\n
+	</string>
+	<string name="help_content_net_ven">
+	1.点击 通风按钮则会使温控机进入通风模式，通风模式下会将模式自动改为手动模式，在通风模式下会自动将风口打开四分之一，在通风时间之后会自动关闭。\r\n
+	2.注意，在通风模式下，手机不能够对风口进行放，关，停以及模式更改。若想提前结束通风模式，只需使用下雨关风功能即可，该功能会直接结束通风模式并关窗。
+	当通风模式刚开启，开窗电机正在运转时不可使用下雨关风功能，必须在电机运行结束后才可以使用。\r\n
+	3.注意，通风模式下温控机仍可以照常控制，也可以在温控机右下角点击关闭通风模式。\r\n
+	</string>
+	<string name="help_content_msg_temp">
+	1.点击读取温度按钮，手机就会向温控机发送一条读取温度的短信，当温控机收到此短信后就会发回一条当前温度的短信，
+	软件识别到此短信后就会显示在温度显示区域，部分手机需要授权发送和读取短信权限才能使用此功能。\r\n
+	</string>
+	<string name="help_content_msg_control">
+	1.短信控制下需要关闭窗户则可以直接点击一键关闭按钮，手机会向温控机发送一条短信，温控机收到短信后会将所有窗户关闭1/4。\r\n
+	2.短信控制下需要打开窗户则可以直接点击一键打开按钮，手机会向温控机发送一条短信，温控机收到短信后会将所有窗户打开1/4。\r\n
+	3.短信控制下需要停止电机则可以直接点击一键停止按钮，手机会向温控机发送一条短信，温控机收到短信后会将所有电机停止运转。\r\n
+	4.短信控制下需要直接关死窗口或者下雨需要立即关闭窗口，则可以直接点击下雨关窗功能下的关闭按钮，手机会向温控机发送一条短信，温控机收到短信后会将所有窗户关死。\r\n
+	5.短信控制下需要切换控制模式，则可以在短信控制模式功能中选择 需要切换的模式，选择后点击发送设置按钮，手机会向温控机发送一条短信，温控机收到短信后会将控制模式改为选择的相应模式。\r\n
+	</string>
+	<string name="help_content_msg_cmd">
+	1.若手机无法安装客户端或者暂未安装客户端，则可以通过普通手机直接发送短信到温控机实现控制。\r\n\r\n
+	2.命令介绍(双引号内为短信命令，后面为命令介绍)：\r\n
+		2.1：“查看”	 ->查询所有窗口的温度、窗口打开长度发送短信到手机；\r\n
+		2.2：“下雨”	 ->将所有窗口关死并进入手动模式（若要停止下雨关窗则直接发送停止全部命令）；\r\n
+		2.3：“温度手动”	 ->将控制模式切为手动；\r\n
+		2.4：“温度自动”	->将控制模式切为自动；\r\n
+		2.5：“关闭1236”	->存在关闭字眼，后面跟数字则将对应的编号窗口1、2、3、6关闭，若不存在数字则默认全部关闭，例如输入关闭或关闭全部都将关闭所有窗口；\r\n
+		2.6：“打开135”	->存在打开字眼，后面跟数字则将对应的编号窗口1、3、5打开，若不存在数字则默认全部打开，例如输入打开或打开全部都将打开所有窗口；\r\n
+		2.7：“停止246”	->存在停止字眼，后面跟数字则将对应的编号窗口2、4、6电机停止运转，若不存在数字则默认全部停止，例如输入停止或停止全部都将停止所有窗口；\r\n
+		2.8：“开至最大”	->将所有窗口打开到最大距离（开窗直至设置最大长度）；\r\n
+		2.9：“放晨风25”	->打开所有窗口1档，放晨风时间25分钟（没有数字，默认为平板设定时间）；\r\n
+		2.10：“结束放晨风”	->关闭通风状态，同时结束电机运转然后自动进行下雨关窗将大棚关死，若不想关死则发送停止命令；\r\n
+		2.11：“设置第一档30”->修改设置第一档的长度为30cm；注意，设置的值不得超过50cm ；\r\n
+		2.12：“设置第二档5”->修改设置第二档的长度为5cm；注意，设置的值不得超过50cm ；\r\n
+		2.13：“设置自由档20”->修改设置自由档的长度为20cm；注意，设置的值不得超过50cm ；\r\n
+		2.14：“设置总长150” ->修改设置，电机最大长度为150cm；注意，设置的值不得低于50cm ；\r\n
+		2.15：“上限温度32”  ->修改设置，“适宜温度上限”改为32℃；\r\n
+		2.16：“下限温度28”  ->修改设置，“适宜温度下限”28℃；\r\n
+		2.17：“开风温度24”   ->修改设置，“开风温度”24℃；\r\n
+		2.18：“关风温度20”   ->修改设置，“关风温度”20℃；\r\n
+		2.19：“报警高温35”   ->修改设置，“关风温度”35℃，同时打开高温报警功能；\r\n
+		2.20：“报警低温15”   ->修改设置，“关风温度”15℃；同时打开低温报警功能；\r\n\r\n
+
+		注意：\r\n\r\n
+
+		a.多条命令需要执行则以“&amp;”进行分隔；\r\n
+		b.无效的命令或者不满足限制的命令将直接被抛弃。\r\n
+		c.发送短信的手机的手机号码必须在温控机中进行设置，即手机号码必须是温控机中主手机号码或从2手机号码或从3手机号码中的一个。\r\n
+	</string>
+	<string name="help_content_set_win">
+	1.在参数设置界面，点击窗口数量选区，会弹出窗口数量的下拉框，此时用户可以选择需要的窗口数量，然后点击保存按钮保存选择，然后生效。\r\n
+	2.然后回到网络控制界面或者短信控制界面时，就会发现窗口数量和刚才参数设置的窗口数量一致。\r\n
+	</string>
+	<string name="help_content_setting">
+	1.在参数设置界面，可以对相关参数进行设置 ，完成输入后点击 按钮来保存刚才的输入结果，然后生效。\r\n
+	2.主手机号码：用来储存本机号码，多个大棚共享此信息，用来作为与温控机交互的根据，请如实填写。\r\n
+	3.温控机号码：用来联系大棚温控机的根据，每个大棚都需要配置一个温控机号码用来联系每个大棚的温控机。\r\n
+	4.大棚名称：用来方便记忆管理大棚的别名，本软件将使用该名称来提示用户，每个大棚需要取一个别名。\r\n
+	5.风口数量：用来配置针对某个大棚需要管理的风口数量，应当与温控机配置相同。\r\n
+	6.最高温度：用来配置某个大棚的最高温度。\r\n
+	7.最低温度：用来配置某个大棚的最低温度。\r\n
+	8.温度上限温差：用来配置某个大棚的最高温度上限。\r\n
+	9.温度下限温差：用来配置某个大棚的最低温度下限。\r\n
+	10.风口打开至最大的链条长度：用来配置某个大棚的拉开的最大距离。\r\n
+	11.风口打开第一档的链条长度：用来配置某个大棚的拉开第一档的距离。\r\n
+	12.通风时间长度：用来配置某个大棚的通风时间长度。\r\n
+	13.夜间模式开启时间：用来配置某个大棚的夜间模式开启时间。\r\n
+	14.夜间模式结束时间：用来配置某个大棚的夜间模式结束时间。\r\n
+	17．读取温控机参数：用来同步与温控机的参数，点击后可以将对应大棚的相关信息同步到手机并储存。\r\n
+	</string>
+	<string name="help_content_set_house">
+	1.手机端支持同时管理多个大棚，若要管理多个大棚可以在参数设置中点击添加新大棚按钮进行添加，当点击后会显示要求输入大棚名称的对话框，
+	填写名称后点击添加，添加完成后新的大棚会显示在大棚选项卡中。 \r\n
+	可以点击大棚名选项卡切换大棚，切换后相关数据都会切换到对应大棚的数据。在某个大棚选项卡的操作都是针对该大棚的，若要对其他的大棚进行操作可以用大棚选项卡进行切换后再进行操作。
+	2.若要对大棚进行重新命名则可以在参数设置下大棚名称进行相应设置即可。\r\n
+	3.若要删除某个大棚只需在需要删除的大棚下，在参数设置中点击删除此大棚按钮 点击后会显示确认对话框，当点击确定后会将该大棚删除并将所有的相关数据进行清空。\r\n
+	</string>
+	<string name="help_content_share">
+	1.若是想要将软件信息分享给其他用户可以点击分享按钮来进行分享。\r\n
+	2.点击分享按钮后会显示分享渠道选择，点击选择需要分享的渠道就会进行相应的分享。\r\n
+	</string>
+	<string name="help_content_set_function">
+	1.若是需要对软件功能进行设置，需要点击标题栏左上方的菜单键或者从屏幕左侧边沿向右划，此时会显示滑动菜单界面。\r\n
+	2.在菜单界面的左下角点击进入设置可以进入设置界面进行相关功能的设置。\r\n
+	3.消息声音及消息震动为来温度信息或推送信息时发出声音与震动的开关。\r\n
+	</string>
+	<!-- 帮助页面信息 end -->
+	
+    <string name="tab_browse">浏览</string>
+    <string name="tab_news">新闻</string>
+    <string name="tab_quick">快速发帖</string>
+    <string name="tab_find">发现</string>
+    <string name="tab_me">我</string>
+    
+    <string name="tab_net_control">网络控制</string>
+    <string name="tab_msg_control">短信控制</string>
+    <string name="tab_setting">参数配置</string>
+    <string name="title_net_control">温室大棚网络控制</string>
+    <string name="title_msg_control">温室大棚短信控制</string>
+    <string name="title_setting">大棚参数设置</string>
+    <string name="back">返回</string>
+    <string name="link_state">连接状态 </string>
+    <string name="link_state_null">无连接 </string>
+    <string name="close_window">关闭风口</string>
+    <string name="open_window">打开风口</string>
+    <string name="stop">停机</string>
+    <string name="load_tem">读取温度</string>
+    <string name="load_water">读取湿度</string>
+    <string name="current_tem">当前温度</string>
+    <string name="current_water">当前湿度</string>
+    <string name="current_light">当前照度信息</string>
+    <string name="load_light">读取照度信息</string>
+    <string name="temp_tip">当前处于夜间模式</string>
+    <string name="mode_tip">当前正处于手动模式</string>
+    <string name="mode_tip_auto">当前正处于自动模式</string>
+    <string name="main_info">总体信息</string>
+    <string name="close_link">关闭连接</string>
+    <string name="resume_link">重新连接</string>
+    <string name="linking">正在连接</string>
+    <string name="re_link">重新连接</string>
+    <string name="clear_msg">清除消息</string>
+    <string name="receive_msg">接受到的消息</string>
+    <string name="net_control">网络操作</string>
+    <string name="msg_feedback">信息回馈</string>
+    <string name="base_setting">基本设置</string>
+    <string name="main_phone_mun">主手机号码</string>
+    <string name="tem_machine_num">温控机号码</string>
+    <string name="phone_mun_two">从2手机号码</string>
+    <string name="phone_mun_three">从3手机号码</string>
+    <string name="tem_machine_match_num">温控机匹配号</string>
+    <string name="highest_tem">适宜温度上限(单位：℃)</string>
+    <string name="lowest_tem">关风温度(单位：℃)</string>
+    <string name="difference_upper_limit">适宜温度下限(单位：℃)</string>
+    <string name="difference_lower_limit">开风温度(单位：℃)</string>
+    <string name="open_len">风口打开至最大的链条长度(单位:厘米)</string>
+    <string name="open_len_first">风口打开第一档的链条长度(单位:厘米)</string>
+    <string name="ventilation_time">通风时间长度(分钟)</string>
+    <string name="open_window_time">夜间模式开始时间</string>
+    <string name="close_window_time">夜间模式结束时间</string>
+    <string name="control_way">控制方式:</string>
+    <string name="save">保存</string>
+    <string name="save_success">保存成功</string>
+    <string name="cancle">取消</string>
+    <string name="confirm">确定</string>
+    <string name="set_time_title">设置时间信息</string>
+    <string name="please_select_time">请选择时间</string>
+    <string name="mode_auto">自动模式</string>
+    <string name="mode_rain_open">下雨关风：开</string>
+    <string name="mode_rain_close">下雨关风：关</string>
+    <string name="mode_wind_open">放晨风：开</string>
+    <string name="mode_wind_close">放晨风：关</string>
+    <string name="mode_high_auto">高温自动切换</string>
+    <string name="mode_manually">手动模式</string>
+    <string name="rump_state_open">当前水泵状态：打开</string>
+    <string name="rump_state_close">当前水泵状态：关闭</string>
+    <string name="yao_state_open">当前药泵状态：打开</string>
+    <string name="yao_state_close">当前药泵状态：关闭</string>
+    <string name="onekey_state_open">当前一件灌水状态：打开</string>
+    <string name="onekey_state_close">当前一件灌水状态：关闭</string>
+    <string name="window_control">风口控制</string>
+    <string name="water_control">电磁阀控制</string>
+    <string name="water_rump_control">水泵控制</string>
+    <string name="water_yao_control">药泵控制</string>
+    <string name="water_onekey_control">一件灌水控制</string>
+    <string name="light_control">补光灯控制</string>
+    <string name="water_id_1">电磁阀1</string>
+    <string name="water_id_2">电磁阀2</string>
+    <string name="water_id_3">电磁阀3</string>
+    <string name="water_id_4">电磁阀4</string>
+    <string name="water_id_5">电磁阀5</string>
+    <string name="water_id_6">电磁阀6</string>
+    <string name="water_id_7">电磁阀7</string>
+    <string name="water_id_8">电磁阀8</string>
+    <string name="water_id_9">电磁阀9</string>
+    <string name="light_id_1">补光灯1</string>
+    <string name="light_id_2">补光灯2</string>
+    <string name="light_id_3">补光灯3</string>
+    <string name="light_id_4">补光灯4</string>
+    <string name="light_id_5">补光灯5</string>
+    <string name="light_id_6">补光灯6</string>
+    <string name="light_id_7">补光灯7</string>
+    <string name="light_id_8">补光灯8</string>
+    <string name="light_id_9">补光灯9</string>
+    <string name="window_one">风口1</string>
+    <string name="window_two">风口2</string>
+    <string name="window_three">风口3</string>
+    <string name="window_four">风口4</string>
+    <string name="window_five">风口5</string>
+    <string name="window_six">风口6</string>
+    <string name="window_seven">风口7</string>
+    <string name="window_eight">风口8</string>
+    <string name="window_nine">风口9</string>
+    <string name="msg_info_setting">发送短信内容配置</string>
+    <string name="receive_msg_title">接收到的短信</string>
+    <string name="check_current_tem">是否查看当前温度</string>
+    <string name="control_motor">是否控制电机</string>
+    <string name="select_msg_type">选择短信控制类型</string>
+    <string name="select_control_window">选择控制风口</string>
+    <string name="send_control_msg">发送控制短信</string>
+    <string name="modify_setting">同步参数设置</string>
+    <string name="modify_setting_descr">将手机参数设置同步到温控机</string>
+    <string name="modify_setting_btn">同步设置</string>
+    <string name="msg_control_setting">短信控制主机参数</string>
+    <string name="msg_title_mode">短信控制模式</string>
+    <string name="msg_title_mode_descr">下雨天请选中手动模式，所有风口都将关闭！</string>
+    <string name="msg_btn_send_setting">发送设置</string>
+    <string name="msg_title_modify_setting">短信修改主机参数</string>
+    <string name="msg_descr_modify_setting_hide">其他参数在“参数设置”页面设置好后，在下面选择需要进行修改的参数(点击显示详细)</string>
+    <string name="msg_descr_modify_setting_show">其他参数在“参数设置”页面设置好后，在下面选择需要进行修改的参数(点击隐藏详细)</string>
+    <string name="msg_morning_open_time">早晨开启时间</string>
+    <string name="msg_night_close_time">晚上关闭时间</string>
+    <string name="msg_open_time">放风时间长度</string>
+    <string name="msg_close_time">关风时间长度</string>
+    <string name="msg_vent_time">清晨通风时间长度</string>
+    <string name="msg_btn_send_setting_m">发送设置短信</string>
+    <string name="msg_title_match">数据流量匹配</string>
+    <string name="msg_descr_match">手机与温控主机网络匹配，需使用移动数据流量</string>
+    <string name="msg_btn_match">匹配网络</string>
+    <string name="load_old_setting">检查新版本</string>
+    <string name="new_version_descr">新版本特性</string>
+    <string name="about_guild">版本特性概览</string>
+    <string name="selected_all">全选</string>
+    <string name="tip">提示</string>
+    <string name="sure">确认</string>
+    <string name="sure_to_auto">确定进入自动模式？</string>
+    <string name="sure_to_high_auto">确定进入高温转自动模式？</string>
+    <string name="sure_to_rain">确定使用下雨关风功能？</string>
+    <string name="sure_to_out_rain">确定退出下雨关风功能？</string>
+    <string name="sure_to_rain_info">使用后将会将所有风口关死，如果在通风模式下将会结束通风模式然后关死。</string>
+    <string name="sure_to_rain_out_info">退出下雨关风后，风口将根据温度转为自动模式</string>
+    <string name="sure_to_rain_manual">确定退出下雨关风功能？</string>
+    <string name="sure_to_rain_manual_info">退出后风口将进入高温转自动功能</string>
+    <string name="sure_to_manual">确定进入手动模式？</string>
+    <string name="sure_to_high_manual">确定退出高温转自动模式？</string>
+    <string name="to_auto_prompt">风口开关将根据温度自动控制</string>
+    <string name="to_auto_open_descr">当开启此功能时，温度超过高温报警温度后，将在原有报警提示的基础上，自动将模式切换到自动模式进行温度调节，保护作物正常生长。不开启则不会自动切换到自动模式。</string>
+    <string name="to_manual_open_descr">将不会自动进入”自动模式“</string>
+    <string name="to_manual_prompt">风口开关将不能根据温度自动控制</string>
+    <string name="to_water_auto_prompt">电磁阀将根据湿度自动打开进行调节</string>
+    <string name="to_water_manual_prompt">电磁阀将不能根据湿度自动调节</string>
+    <string name="to_light_auto_prompt">补光灯将根据每天照度不够的时间自动进行补光</string>
+    <string name="to_light_manual_prompt">补光灯将不能根据每天照度不够的时间自动进行补光</string>
+    <string name="sure_to_setting">确定需要同步设定配置参数？</string>
+    <string name="to_auto">进入自动模式</string>
+    <string name="to_manual">进入手动模式</string>
+    <string name="data_link_faild">手机数据流量尚未打开</string>
+    <string name="light_value">%1$dLx\n补光灯%2$d号</string>
+    <string name="please_selected_close_w">请选择需要关闭的风口!</string>
+    <string name="please_selected_open_w">请选择需要打开的风口!</string>
+    <string name="please_selected_stop_w">请选择需要停机的风口!</string>
+    <string name="please_selected_close_water">请选择需要关闭的电磁阀!</string>
+    <string name="please_selected_open_water">请选择需要打开的电磁阀!</string>
+    <string name="please_selected_close_light">请选择需要关闭的补光灯!</string>
+    <string name="please_selected_open_light">请选择需要打开的补光灯!</string>
+    <string name="net_is_faild">对不起，当前网络不可用，请查看网络连接状况！</string>
+    <string name="temp_show">%1$s\n℃</string>
+    <string name="phone_is_null">手机号码不能为空！</string>
+    <string name="phone_is_error">您输入的电话号码不正确请重新输入！</string>
+    <string name="msg_context_is_null">短信内容不能为空请重新输入！</string>
+    <string name="match_scuess">与温控机匹配成功！</string>
+    <string name="please_selected_window">请至少选择一个操作的风口</string>
+    <string name="requesting_temp">正在请求温度</string>
+    <string name="pad_link_state">连接状态</string>
+    <string name="net_link_error">未连接上网络</string>
+    <string name="net_link_ok">已连接上网络</string>
+    <string name="phone_cid">本机匹配号</string>
+    <string name="select_window_count">风口数量</string>
+    <string name="close_all_window">下雨关风</string>
+    <string name="close_all_window_descr">此功能能一次性关死所有风口，同时将模式置为手动模式。也可以用于结束通风模式并自动关风。</string>
+    <string name="close_all_window_state">下雨关风状态</string>
+    
+    <string name="close">关      闭</string>
+    <string name="query_version">当前版本：%1$s</string>
+    <string name="new_show_temp">风口%1$s：\n%2$s</string>
+    <string name="net_diagnosis">网络诊断</string>
+    <string name="net_diagnosis_descr">当网络异常时能诊断异常原因</string>
+    <string name="btn_diagnosis">网络诊断</string>
+    <string name="diagnosis_show_text">正在为您诊断网络故障..</string>
+    <string name="ventilation">放  晨  风</string>
+    <string name="ventilation_btn">通    风</string>
+    <string name="ventilation_descr">打开大棚所有风口通风一段时间,到了指定时间后自动关闭。</string>
+    <string name="open_ven_into">确定要使用一键放风功能？</string>
+    <string name="open_ven_out">确定要使用一键放风功能？</string>
+    <string name="sure_to_ven">通风打开电机过程手机端无法进行停止，打开完毕后通风过程中手机无法正常进行放关停操作，如需停止可使用下雨关风或者直接关闭结束通风模式。</string>
+    <string name="sure_to_out_ven">关闭后将会进入高温转自动模式</string>
+    <string name="msg_control_descr">短信控制</string>
+    <string name="close_all_title">一键关闭风口</string>
+    <string name="close_all_descr">一次性将所有风口关闭</string>
+    <string name="close_all_btn">一键关闭</string>
+    <string name="close_all_state">一键关风状态</string>
+    <string name="open_all_title">一键打开风口</string>
+    <string name="open_all_descr">一次性将所有风口打开</string>
+    <string name="open_all_btn">一键打开</string>
+    <string name="stop_all_title">一键停止</string>
+    <string name="stop_all_descr">一次性停止所有电机运转</string>
+    <string name="stop_all_btn">一键停止</string>
+    <string name="close_all_descr_rain">一次性将所有风口关死</string>
+    <string name="close_all_btn_rain">关闭</string>
+    <string name="share_qq">QQ</string>
+    <string name="share_we">微信</string>
+    <string name="share_friend">朋友圈</string>
+    <string name="share_qzone">QQ空间</string>
+    <string name="share_other">其他</string>
+    <string name="share">分享</string>
+    <string name="refresh">刷新</string>
+    <string name="submit">提交</string>
+    <string name="push_temp">收到新的温度信息</string>
+    <string name="read_setting">读取主控端参数</string>
+    <string name="msg_sound">消息提示音</string>
+    <string name="temp_enable">是否启用</string>
+    <string name="msg_vibrate">消息震动</string>
+    <string name="msg_net">使用数据流量时是否显示图片</string>
+    <string name="setting_welcome">显示欢迎界面</string>
+    <string name="gh_remove">删除此大棚</string>
+    <string name="setting_stalls">档位管理</string>
+    <string name="temp_config">温度信息配置</string>
+    <string name="gh_add">添加</string>
+    <string name="setting_temp">自动控制温度管理</string>
+    <string name="setting_temp_edit">温度设置</string>
+    <string name="gh_name">大棚名称</string>
+    <string name="delete_scuess">删除成功</string>
+    <string name="delete_faild">删除失败</string>
+    <string name="user_protocol">用户协议</string>
+    <string name="pad_pwd">温控机密码</string>
+    <string name="navigation_drawer_open">navigation_drawer_open</string>
+    <string name="navigation_drawer_close">navigation_drawer_close</string>
+    <string name="menu_setting">设置</string>
+    <string name="menu_exit">重启温控机</string>
+    <string name="menu_exit_app">退出程序</string>
+    <string name="send_way">发送方式</string>
+    <string name="history">消息历史记录</string>
+    <string name="history_temp">温度历史记录</string>
+    <string name="history_alarm">报警历史记录</string>
+    <string name="history_water">水肥一体化历史记录</string>
+    <string name="history_light">照度历史记录</string>
+    <string name="water_setting">水肥一体化参数设置</string>
+    <string name="light_setting">照度管理参数设置</string>
+    <string name="item_ba">社区讨论</string>
+    <string name="item_news">菜农之家</string>
+    <string name="item_water">水肥一体化</string>
+    <string name="item_light">照度管理</string>
+    <string name="msg_detail">消息详情</string>
+    <string name="news_detail">新闻详情</string>
+    <string name="peng_manager">大棚管理</string>
+    <string name="user_name">用户名</string>
+    <string name="about">关于软件</string>
+    <string name="help">帮助</string>
+    <string name="login">登录</string>
+    <string name="resign">注册</string>
+    <string name="modify">修改</string>
+    <string name="next">下一步</string>
+    <string name="user_detail_title">我的信息</string>
+    <string name="setting">系统设置</string>
+    <string name="setting_simple">设置</string>
+    <string name="feedback">意见反馈</string>
+    <string name="modify_pwd">修改密码</string>
+    <string name="user_info">用户信息</string>
+    <string name="user_collect">我的收藏</string>
+	<string name="copyright">Copyright © 上海洲涛智能 All rights reserved.</string>
+	<string name="shztsite">官网</string>
+	<string name="knowmore">了解更多</string>
+	<string name="to_resign"><u>还没有帐号？那就去注册吧</u></string>
+	<string name="to_login"><u>使用密码登陆</u></string>
+	<string name="forget_pwd"><u>忘记密码了？</u></string>
+	<string name="forget_password">忘记密码</string>
+	<string name="user_login_new">用户登陆</string>
+	<string name="user_login_phone">手机号码登陆</string>
+	<string name="hint_nickname">请输入用户名</string>
+	<string name="hint_username">请输入手机号</string>
+	<string name="hint_password">请输入密码</string>
+	<string name="hint_password_old">请输入旧密码</string>
+	<string name="hint_password_again">请再输入密码</string>
+	<string name="hint_code">请输入验证码</string>
+	<string name="get_code">获取短信验证码</string>
+	<string name="get_voice_code">短信验证码收不到？可以试试语音验证码</string>
+	<string name="win_state">已打开:%1$s厘米</string>
+	<string name="night_mode_descr">注意：夜间模式生效时,温控机将不会根据温度自动控制风口,推送温度和发送报警消息,同时手机也不会触发连接异常的报警。</string>
+    <string name="guild_ok">进入体验</string>
+    <string name="empty_notice">暂时未查询到数据</string>
+    <string name="peng_total_info">已查询到%1$d个大棚信息</string>
+    <string name="peng_item_name">大棚名称：</string>
+    <string name="peng_item_num">温控机号码：</string>
+    <string name="peng_item_time">创建时间：</string>
+    
+    <!-- Error View -->
+    <string name="error_view_click_to_refresh">点击屏幕,重新加载</string>
+    <string name="error_view_no_data">暂无内容</string>
+    <string name="error_view_loading">加载中…</string>
+    <string name="error_view_load_error_click_to_refresh">内容加载失败\r\n点击重新加载</string>
+    <string name="error_view_network_error_click_to_refresh">没有可用的网络</string>
+    <string name="tip_network_error">没有可用的网络</string>
+    
+    <string name="loading">加载中…</string>
+    <string name="loading_no_more">已加载全部</string>
+    
+	<string name="temp_push_time">温度推送时间间隔(单位：分钟)</string>
+	<string name="alarm_temp_max">温度报警最高温度(单位：℃)</string>
+	<string name="alarm_temp_min">温度报警最低温度(单位：℃)</string>
+	<string name="alarm_msg_enable">是否关闭短信报警</string>
+	<string name="alarm_msg_enable_descr">此功能开启后将不发送短信给手机</string>
+	<string name="auto_open_enable">高温模式自动切换功能：</string>
+	<string name="auto_open_descr">当开启此功能时，温度超过高温报警温度后，将在原有报警提示的基础上，自动将模式切换到自动模式进行温度调节，保护作物正常生长。不开启则不会自动切换到自动模式。</string>
+	<string name="temp_more_mode">风口温度单独管理功能</string>
+	<string name="temp_more_mode_descr">风口温度单独管理功能开启后会使得每个风口的温度配置都可以独立配置及使用，方便对大棚进行分段式管理。</string>
+	<string name="select_window">请选择风口编号</string>
+	<string name="water_enable_title">水肥一体化功能开关</string>
+	<string name="water_enable_descr">开启后侧滑菜单中将会显示水肥一体化菜单项，并可以进入相关界面进行相关功能的使用。</string>
+	<string name="light_enable_title">照度管理功能开关</string>
+	<string name="light_enable_descr">开启后侧滑菜单中将会显示照度管理菜单项，并可以进入相关界面进行相关功能的使用。</string>
+	<string name="alarm_temp_max_descr">风口温度达到此温度时将发出高温报警</string>
+	<string name="alarm_temp_min_descr">风口温度达到此温度时将发出低温报警</string>
+	<string name="temp_info_curr">当前设置温度值为%1$s℃</string>
+    <string name="temp_info_edit">请输入需要设置的温度值</string>
+    <string name="temp_info_tip">注意：当两个档位的温度值设置相同时，自动控制将会使用较低的档位用于控制，放风档位温度和关风档位温度相同则使用关风档位。例如开风第三档和开风第四档的温度都是24℃，那么自动控制在24℃的时候将会使用开风第三档用于控制</string>
+
+    <string name="max_temp_descr">实际温度大于或等于%1$s摄氏度时,继续上升则会不断打开风口直至开到最大长度。</string>
+    <string name="max_nor_temp_descr">实际温度大于或等于%1$s摄氏度,同时低于%2$s摄氏度时，若风口档位低于第二档则会逐渐打开到第二档，否则电机不动。实际温度低于%1$s摄氏度时，温度下降会逐渐关闭风口，但最多关至第二档。</string>
+    <string name="min_nor_temp_descr">实际温度大于或等于%1$s摄氏度,同时低于%2$s摄氏度时，温度上升则会打开风口，但最大开到第二档。</string>
+    <string name="min_temp_descr">实际温度大于或等于%1$s摄氏度,同时低于%2$s摄氏度时，若风口档位高于第二档则会逐渐关闭到第二档，否则电机不动。当实际温度低于%1$s摄氏度时，风口会逐渐关闭，直至关死。</string>
+    
+    <string name="open_first">电机运转第一档长度(单位:厘米)</string>
+    <string name="open_second">电机运转第二档长度(单位:厘米)</string>
+    <string name="open_third">电机运转第三档长度(单位:厘米)</string>
+    <string name="open_fourth">电机运转第四档长度(单位:厘米)</string>
+    <string name="open_fifth">电机运转剩余档位长度(单位:厘米)</string>
+    
+    <string name="str_feedback_et_hint">我们将为您不断改进</string>
+    <string name="str_feedback_succeed">谢谢您的反馈，我们会仔细阅读并及时处理</string>
+    <string name="str_feedback_tip">我们会仔细阅读您的反馈，感谢您的理解与支持。</string>
+    
+    <string name="user_self">个人信息</string>
+    <string name="user_exit">退出登录</string>
+    <string name="waiting_loading">正在很努力的工作，请稍候..</string>
+    
+    <string name="user_detail_account">我的手机号码</string>
+    <string name="user_detail_face">我的头像</string>
+    <string name="user_detail_name">昵称</string>
+    <string name="user_detail_sex">性别</string>
+    <string name="user_detail_addr">地址</string>
+    <string name="user_detail_pwd">密码管理</string>
+    <string name="user_detail_signature">我的签名</string>
+    <string name="user_detail_null">[未填写]</string>
+    <string name="user_detail_content">[%1$s]</string>
+    
+    <string name="control_open">打开</string>
+    <string name="control_close">关闭</string>
+    <string name="water_time">滴灌时间(单位：分钟)</string>
+    <string name="water_count">电磁阀数量</string>
+    <string name="water_min">湿度阈值(单位：%RH)</string>
+    <string name="water_alarm_max">湿度报警最大值(单位：%RH)</string>
+    <string name="water_alarm_min">湿度报警最小值(单位：%RH)</string>
+    <string name="water_alarm_max_descr">当土壤湿度到达此湿度时将会发出湿度过高报警消息。</string>
+    <string name="water_alarm_min_descr">当土壤湿度到达此湿度时将会发出湿度过低报警消息。</string>
+    
+    <string name="light_need">每天需要的有效光照时间(单位：分钟)</string>
+    <string name="light_max">照度上限(单位：Lx)</string>
+    <string name="light_min">最小有效照度(单位：Lx)</string>
+    <string name="light_diy">自定义补光时间长度(单位：分钟)</string>
+    <string name="light_start">补光开始时间</string>
+    <string name="light_count">补光灯数量</string>
+    
+    <string name="share_title">上海洲涛分享</string>
+	
+	<string name="report">举报</string>
+	<string name="report_link">链接地址</string>
+	<string name="report_reson">举报原因</string>
+	<string name="hint_report_desc">其他原因</string>
+	<string name="tip_report_success">举报成功</string>
+	<string name="tip_report_faile">举报失败</string>
+    
+	<string name="ok">确定</string>
+	<string name="clean_cache_mes">是否清空缓存?</string>
+	<string name="draft_tweet_message">是否保存为草稿?</string>
+	<string name="clearwords">是否清空内容?</string>
+	<string name="choose_picture">选择图片</string>
+	<string name="tip_content_empty">内容不能为空</string>
+	<string name="tip_content_too_long">内容太长</string>
+    
+    <string name="unlogin">未登录，请先登录</string>
+    <string name="unlogin_tip">您还未登录\r\n或网络延迟</string>
+    <string name="my_information_unlogin_tips">未登录</string>
+
+    <string name="tip_please_input_username">请输入用户名</string>
+    <string name="tip_illegal_email">请输入正确的email地址</string>
+	<string name="tip_please_input_password">请输入密码</string>
+    <string name="progress_login">正在登录…</string>
+    <string name="tip_login_error_for_network">对不起,无法登录</string>
+    <string name="tip_no_internet">当前没有可用的网络链接</string>
+    <string name="share_to">分享到</string>
+	
+	<string name="detail_menu_unfavorite">取消收藏</string>
+    <string name="detail_menu_favorite">收藏</string>
+    <string name="detail_menu_for_share">分享</string>
+    <string name="detail_menu_for_report">举报</string>
+	
+	<string name="add_favorite_success">收藏成功</string>
+	<string name="add_favorite_faile">收藏失败</string>
+	<string name="del_favorite_success">已取消收藏</string>
+	<string name="del_favorite_faile">取消收藏失败</string>
+	
+	<string name="actionbar_title_question_tag">%s相关</string>
+    <string name="comment_count">评论(%s)</string>
+    <string name="comment_empty">暂无评论</string>
+    <string name="answer_count">回复(%s)</string>
+    <string name="post_answer">回复</string>
+    <string name="comment_reply_count">---共有%s条回复---</string>
+    <string name="comment_refer_author">引用来自%s的评论</string>
+	<string name="tip_comment_content_empty">评论内容不能为空</string>
+	
+	<!-- notification messages -->
+	<string name="comment_blog">发布评论</string>
+	<string name="comment_publishing">正在发布你的评论…</string>
+	<string name="comment_publish_success">评论成功</string>
+	<string name="comment_publish_faile">评论失败</string>
+	
+	<string name="confirm_delete_message">确定要删除和\"%s\"的所有留言吗?</string>
+	<string name="confirm_delete_one_message">确定要删除这条留言吗?</string>
+	<string name="tip_delete_success">删除成功</string>
+	<string name="tip_delete_faile">无法删除</string>
+	
+	<string name="copy">复制</string>
+	<string name="delete">删除</string>
+	<string name="deleting">正在删除…</string>
+	<string name="delete_success">删除成功</string>
+	<string name="delete_faile">删除失败</string>
+	
+	<string name="progress_submit">正在提交…</string>
+    <string name="actionbar_title_detail">详情</string>
+    
+    <string name="community_title">洲涛社区</string>
+    <string name="find_circle">菜友圈</string>
+    <string name="find_activity">活动</string>
+    <string name="find_friend">找人</string>
+    <string name="find_scan">扫一扫</string>
+    <string name="find_mall">积分商城</string>
+    <string name="find_pesticide">农药查询</string>
+    
+    <string name="me_msg">我的消息</string>
+    <string name="me_collect">我的收藏</string>
+    <string name="me_note">我的帖子</string>
+    <string name="me_fan">我的粉丝</string>
+    <string name="me_watch">我的关注</string>
+    
+    <string name="user_face">头像</string>
+    <string name="user_nick_name">昵称</string>
+    <string name="user_phone">手机号码</string>
+    <string name="user_code">二维码名片</string>
+    <string name="user_addr">我的地址</string>
+    <string name="user_index">个人主页</string>
+    <string name="user_sex">性别</string>
+    <string name="user_title">个人资料</string>
+    <string name="user_code_title">我的二维码名片</string>
+    <string name="user_code_tip">扫一扫上面的二维码图案关注我吧！</string>
+    <string name="search">搜索</string>
+    <string name="mn_submit">我的发帖</string>
+    <string name="comment">评论</string>
+    <string name="mn_comment">我的评论</string>
+    <string name="mn_read">我的浏览记录</string>
+    <string name="user_list">用户列表</string>
+    <string name="note_pub_hint">今天想说一些什么呢？如果是要问一个问题，一定要记得在文本中加上一个问号哦，这样会有更多的人能来帮助你。</string>
+    <string name="note_pub_title">发帖</string>
+    <string name="comment_history">我的回复</string>
+    
+	<string name="from_web">网页</string>
+	<string name="from_mobile">手机</string>
+	<string name="from_android">Android</string>
+	<string name="from_iphone">iPhone</string>
+	<string name="from_windows_phone">Windows Phone</string>
+	<string name="from_wechat">微信</string>
+	
+    <string name="greenhouse_state">大棚状态</string>
+    <string name="recentlyMsg">最近消息</string>
+    <string name="recently_msg_empty">暂时没有收到消息</string>
+    <string name="state_tuyere_temp">最高温度风口/最低温度风口</string>
+    <string name="sub_tuyere">最高温度风口/最低温度风口</string>
+    <string name="temp_control">温度控制</string>
+    <string name="community_enter">你还在为蔬菜问题没人</string>
+	
+    </resources>

@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none"
+    android:background="?containerBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp">
+
+        <include
+            android:id="@+id/water_feedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/water_seedback" />
+
+        <TextView
+            android:id="@+id/water_title_net"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/water_feedback"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/net_control"
+            android:textColor="@color/sky_blue"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <View
+            android:id="@+id/water_dividing1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/water_title_net"
+            android:layout_margin="10dp"
+            android:background="@color/sky_blue"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/water_title_control_rump"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/water_dividing1"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/water_rump_control"
+            android:textColor="?titleColor"
+            android:textSize="18sp"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:id="@+id/water_rump_rl"
+            style="@style/option_item_rl"
+            android:layout_below="@id/water_title_control_rump"
+            android:layout_marginLeft="20dp" 
+            android:layout_marginRight="20dp"
+            android:background="@color/transparent">
+
+			<TextView
+                style="@style/option_item_text_parent"
+            	android:id="@+id/water_rump_state"
+            	android:textColor="?textColor"
+            	android:text="@string/rump_state_open"/>
+			
+            <com.smartfarm.widget.togglebutton.ToggleButton
+	            android:id="@+id/water_rump_switch"
+	            style="@style/option_item_toggleButton"
+	            android:layout_alignParentRight="true"/>
+            
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/water_rump_dividing"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/water_rump_rl"
+            android:layout_margin="10dp"
+            android:background="@color/grey"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/water_title_control_yao"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/water_rump_dividing"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/water_yao_control"
+            android:textColor="?titleColor"
+            android:textSize="18sp"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:id="@+id/water_yao_rl"
+            style="@style/option_item_rl"
+            android:layout_below="@id/water_title_control_yao"
+            android:layout_marginLeft="20dp" 
+            android:layout_marginRight="20dp"
+            android:background="@color/transparent">
+
+			<TextView
+                style="@style/option_item_text_parent"
+            	android:id="@+id/water_yao_state"
+            	android:textColor="?textColor"
+            	android:text="@string/yao_state_open"/>
+			
+            <com.smartfarm.widget.togglebutton.ToggleButton
+	            android:id="@+id/water_yao_switch"
+	            style="@style/option_item_toggleButton"
+	            android:layout_alignParentRight="true"/>
+            
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/water_yao_dividing"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/water_yao_rl"
+            android:layout_margin="10dp"
+            android:background="@color/grey"
+            android:visibility="visible" />
+        
+        <TextView
+            android:id="@+id/water_title_control_onekey"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/water_yao_dividing"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/water_onekey_control"
+            android:textColor="?titleColor"
+            android:textSize="18sp"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:id="@+id/water_onekey_rl"
+            style="@style/option_item_rl"
+            android:layout_below="@id/water_title_control_onekey"
+            android:layout_marginLeft="20dp" 
+            android:layout_marginRight="20dp"
+            android:background="@color/transparent">
+
+			<TextView
+                style="@style/option_item_text_parent"
+            	android:id="@+id/water_onekey_state"
+            	android:textColor="?textColor"
+            	android:text="@string/onekey_state_open"/>
+			
+            <com.smartfarm.widget.togglebutton.ToggleButton
+	            android:id="@+id/water_onekey_switch"
+	            style="@style/option_item_toggleButton"
+	            android:layout_alignParentRight="true"/>
+            
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/water_onekey_dividing"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/water_onekey_rl"
+            android:layout_margin="10dp"
+            android:background="@color/grey"
+            android:visibility="visible" />
+        
+        <TextView
+            android:id="@+id/water_title_control"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/water_onekey_dividing"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/water_control"
+            android:textColor="?titleColor"
+            android:textSize="18sp"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/water_ll_1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/water_title_control"
+            android:orientation="horizontal"
+            android:paddingLeft="30dp"
+            android:visibility="visible" >
+
+            <CheckBox
+                android:id="@+id/water_checkbox_w1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/water_id_1"
+            	android:textColor="?titleColor"
+                android:checked="true"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/water_checkbox_w2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/water_id_2"
+            	android:textColor="?titleColor"
+                android:checked="true"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/water_checkbox_w3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:checked="true"
+                android:text="@string/water_id_3"
+            	android:textColor="?titleColor"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/water_ll_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/water_ll_1"
+            android:orientation="horizontal"
+            android:paddingLeft="30dp"
+            android:visibility="visible" >
+
+            <CheckBox
+                android:id="@+id/water_checkbox_w4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:checked="true"
+                android:text="@string/water_id_4"
+            	android:textColor="?titleColor"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/water_checkbox_w5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:checked="true"
+                android:text="@string/water_id_5"
+            	android:textColor="?titleColor"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/water_checkbox_w6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/water_id_6"
+            	android:textColor="?titleColor"
+                android:checked="true"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/water_ll_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/water_ll_2"
+            android:orientation="horizontal"
+            android:paddingLeft="30dp"
+            android:visibility="visible" >
+
+            <CheckBox
+                android:id="@+id/water_checkbox_w7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:checked="true"
+                android:text="@string/water_id_7"
+            	android:textColor="?titleColor"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/water_checkbox_w8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:checked="true"
+                android:text="@string/water_id_8"
+            	android:textColor="?titleColor"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/water_checkbox_w9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/water_id_9"
+            	android:textColor="?titleColor"
+                android:checked="true"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/water_ll_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/water_ll_3"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:visibility="visible"
+			android:layout_marginTop="10dp">
+
+            <TextView 
+                android:id="@+id/water_btn_open"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+	            android:background="@drawable/btn_selector"
+	            android:clickable="true"
+	            android:ellipsize="end"
+	            android:gravity="center"
+	            android:singleLine="true"
+	            android:text="@string/control_open"
+	            android:layout_marginLeft="30dp"
+	            android:layout_marginRight="30dp"
+            	android:textColor="#FFFFFF"
+           		android:textSize="14sp"/>
+
+            <TextView 
+                android:id="@+id/water_btn_close"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+	            android:background="@drawable/btn_selector"
+	            android:clickable="true"
+	            android:ellipsize="end"
+	            android:gravity="center"
+	            android:singleLine="true"
+	            android:text="@string/control_close"
+	            android:layout_marginLeft="30dp"
+	            android:layout_marginRight="30dp"
+            	android:textColor="#FFFFFF"
+           		android:textSize="14sp"/>
+            
+            <!-- <ImageView 
+                android:id="@+id/water_btn_open"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/open_btn_selector"
+                android:clickable="true"
+                android:padding="25dp"
+                android:contentDescription="@string/hello_world"/>
+
+            <ImageView 
+                android:id="@+id/water_btn_close"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/close_btn_selector"
+                android:clickable="true"
+                android:padding="25dp"
+                android:contentDescription="@string/hello_world"/> -->
+        </LinearLayout>
+
+        <View
+            android:id="@+id/water_dividing2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/water_ll_4"
+            android:layout_margin="10dp"
+            android:background="@color/grey"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/water_desc_link"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/water_dividing2"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/pad_link_state"
+            android:textColor="?titleColor"
+            android:textSize="18sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/water_btn_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/water_desc_link"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_selector"
+            android:clickable="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/re_link"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/water_text_link"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignBaseline="@id/water_btn_link"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/water_btn_link"
+            android:layout_below="@id/water_desc_link"
+            android:gravity="center_vertical"
+            android:text="@string/link_state"
+            android:textColor="?textColor"
+            android:textSize="16sp"
+            android:visibility="visible" />
+
+        <View
+            android:id="@+id/water_dividing_3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/water_text_link"
+            android:layout_margin="10dp"
+            android:background="@color/grey"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/water_desc_diagnosis"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/water_dividing_3"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/net_diagnosis"
+            android:textColor="?titleColor"
+            android:textSize="18sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/water_btn_diagnosis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignLeft="@id/water_btn_link"
+            android:layout_below="@id/water_desc_diagnosis"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_selector"
+            android:clickable="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/btn_diagnosis"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/water_text_diagnosis"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignBaseline="@id/water_btn_diagnosis"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toLeftOf="@id/water_btn_diagnosis"
+            android:gravity="center_vertical"
+            android:text="@string/net_diagnosis_descr"
+            android:textColor="?textColor"
+            android:textSize="16sp"
+            android:visibility="visible" />
+        
+        <View
+            android:id="@+id/water_dividing4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/water_btn_diagnosis"
+            android:layout_margin="10dp"
+            android:background="@color/grey"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/water_desc_control_way"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/water_dividing4"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/control_way"
+            android:textSize="18sp"
+            android:textColor="?titleColor"
+            android:visibility="visible" />
+        
+        <RelativeLayout
+            android:id="@+id/water_mode_rl"
+            style="@style/option_item_rl"
+            android:layout_below="@id/water_desc_control_way"
+            android:layout_marginLeft="20dp" 
+            android:layout_marginRight="20dp"
+            android:background="@color/transparent">
+
+			<TextView
+                style="@style/option_item_text_parent"
+            	android:id="@+id/water_text_control_way"
+            	android:textColor="?textColor"
+            	android:text="@string/mode_auto"/>
+			
+            <com.smartfarm.widget.togglebutton.ToggleButton
+	            android:id="@+id/water_btn_switch"
+	            style="@style/option_item_toggleButton"
+	            android:layout_alignParentRight="true"/>
+            
+        </RelativeLayout>
+        
+    </RelativeLayout>
+
+</ScrollView>

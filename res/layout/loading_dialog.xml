@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/toast_bg"
+    android:padding="15dp">
+    
+	<TextView 
+	    android:id="@+id/loading_dialog_title"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentTop="true"
+	    android:text="@string/waiting_loading"
+	    android:textSize="15sp"
+	    android:textColor="@color/white"/>
+    
+	<com.smartfarm.widget.CircularProgress 
+	    android:layout_height="60dp"
+	    android:layout_width="60dp"
+	    android:layout_marginTop="10dp"
+	    android:id="@+id/loading_dialog_progress"
+	    android:layout_below="@id/loading_dialog_title"
+	    android:layout_centerHorizontal="true"/>
+	
+</RelativeLayout>

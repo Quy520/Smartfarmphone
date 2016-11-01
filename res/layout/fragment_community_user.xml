@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.smartfarm.widget.CustomerScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/user_btn_face"
+            style="@style/option_item_rl"
+			android:layout_marginTop="20dp">
+
+		    <com.smartfarm.widget.AvatarView
+                android:id="@+id/user_iv_face"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/default_user_face"
+                android:contentDescription="@string/hello_world"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"/>
+            
+            <TextView
+                style="@style/option_item_text_parent"
+                android:text="@string/user_face"
+                android:textColor="@color/main_black"
+                android:textSize="@dimen/text_size_16"
+				android:layout_marginLeft="10dp"
+				android:singleLine="true"
+				android:ellipsize="end"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/user_btn_name"
+            style="@style/option_item_rl"
+            android:layout_marginTop="20dp">
+            
+            <TextView
+                style="@style/option_item_text_parent"
+                android:text="@string/user_nick_name"
+                android:textColor="@color/main_black"
+                android:textSize="@dimen/text_size_16"
+				android:layout_marginLeft="10dp"/>
+            
+            <TextView
+                android:id="@+id/user_tv_name"
+                style="@style/option_item_text_parent"
+                android:text="@string/user_nick_name"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/text_size_16"
+				android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/space_8"
+            android:layout_marginRight="@dimen/space_8"
+            android:background="@color/list_divider_color" />
+
+        <RelativeLayout
+            android:id="@+id/user_btn_phone"
+            style="@style/option_item_rl">
+            
+            <TextView
+                style="@style/option_item_text_parent"
+                android:text="@string/user_phone"
+                android:textColor="@color/main_black"
+                android:textSize="@dimen/text_size_16"
+				android:layout_marginLeft="10dp"/>
+            
+            <TextView
+                android:id="@+id/user_tv_phone"
+                style="@style/option_item_text_parent"
+                android:text="@string/user_phone"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/text_size_16"
+				android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/user_btn_sex"
+            style="@style/option_item_rl"
+            android:layout_marginTop="20dp">
+            
+            <TextView
+                style="@style/option_item_text_parent"
+                android:text="@string/user_sex"
+                android:textColor="@color/main_black"
+                android:textSize="@dimen/text_size_16"
+				android:layout_marginLeft="10dp"/>
+            
+            <TextView
+                android:id="@+id/user_tv_sax"
+                style="@style/option_item_text_parent"
+                android:text="@string/user_sex"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/text_size_16"
+				android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/space_8"
+            android:layout_marginRight="@dimen/space_8"
+            android:background="@color/list_divider_color" />
+
+        <RelativeLayout
+            android:id="@+id/user_btn_addr"
+            style="@style/option_item_rl">
+            
+            <TextView
+                style="@style/option_item_text_parent"
+                android:text="@string/user_addr"
+                android:textColor="@color/main_black"
+                android:textSize="@dimen/text_size_16"
+				android:layout_marginLeft="10dp"/>
+            
+            <TextView
+                android:id="@+id/user_tv_addr"
+                style="@style/option_item_text_parent"
+                android:text="@string/user_addr"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/text_size_16"
+				android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/space_8"
+            android:layout_marginRight="@dimen/space_8"
+            android:background="@color/list_divider_color" />
+
+        <RelativeLayout
+            android:id="@+id/user_btn_code"
+            style="@style/option_item_rl">
+            
+            <TextView
+                style="@style/option_item_text_parent"
+                android:text="@string/user_code"
+                android:textColor="@color/main_black"
+                android:textSize="@dimen/text_size_16"
+				android:layout_marginLeft="10dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/user_btn_index"
+            style="@style/option_item_rl"
+            android:layout_marginTop="20dp">
+            
+            <TextView
+                style="@style/option_item_text_parent"
+                android:text="@string/user_index"
+                android:textColor="@color/main_black"
+                android:textSize="@dimen/text_size_16"
+				android:layout_marginLeft="10dp"/>
+        </RelativeLayout>
+        
+        
+    </LinearLayout>
+
+</com.smartfarm.widget.CustomerScrollView>

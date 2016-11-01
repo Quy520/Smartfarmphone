@@ -1,0 +1,100 @@
+<com.smartfarm.widget.CustomerScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/history_temp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/list_item_background"
+            android:clickable="true"
+            android:padding="15dp"
+            android:gravity="center_vertical|left"
+            android:text="@string/history_temp"
+            android:textColor="@color/main_black"
+            android:textSize="@dimen/text_size_16"
+            android:drawableLeft="@drawable/history_temp"
+            android:drawablePadding="10dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/space_8"
+            android:layout_marginRight="@dimen/space_8"
+            android:background="@color/list_divider_color" />
+
+        <TextView
+            android:id="@+id/history_alarm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/list_item_background"
+            android:clickable="true"
+            android:padding="15dp"
+            android:gravity="center_vertical|left"
+            android:text="@string/history_alarm"
+            android:textColor="@color/main_black"
+            android:textSize="@dimen/text_size_16"
+            android:drawableLeft="@drawable/history_alarm"
+            android:drawablePadding="10dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/space_8"
+            android:layout_marginRight="@dimen/space_8"
+            android:background="@color/list_divider_color" />
+
+        <TextView
+            android:id="@+id/history_water"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/list_item_background"
+            android:clickable="true"
+            android:padding="15dp"
+            android:gravity="center_vertical|left"
+            android:text="@string/history_water"
+            android:textColor="@color/main_black"
+            android:textSize="@dimen/text_size_16"
+            android:drawableLeft="@drawable/history_water"
+            android:drawablePadding="10dp"/>
+
+        <View
+            android:id="@+id/history_water_dividing"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/space_8"
+            android:layout_marginRight="@dimen/space_8"
+            android:background="@color/list_divider_color" />
+
+        <TextView
+            android:id="@+id/history_light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/list_item_background"
+            android:clickable="true"
+            android:padding="15dp"
+            android:gravity="center_vertical|left"
+            android:text="@string/history_light"
+            android:textColor="@color/main_black"
+            android:textSize="@dimen/text_size_16"
+            android:drawableLeft="@drawable/history_light"
+            android:drawablePadding="10dp"/>
+
+        <View
+            android:id="@+id/history_light_dividing"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/space_8"
+            android:layout_marginRight="@dimen/space_8"
+            android:background="@color/list_divider_color" />
+    </LinearLayout>
+
+</com.smartfarm.widget.CustomerScrollView>

@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/setting_focus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/base_setting"
+            android:textColor="@color/sky_blue"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="10dp"
+            android:background="@color/sky_blue" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:text="@string/main_phone_mun"
+            android:textColor="?titleColor"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/setting_main_phone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center_vertical"
+            android:inputType="phone"
+            android:textColor="?textColor"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="10dp"
+            android:background="@color/grey"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/tem_machine_num"
+            android:textColor="?titleColor"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/setting_tem_machine_num"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center_vertical"
+            android:inputType="phone"
+            android:textColor="?textColor"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="10dp"
+            android:background="@color/grey" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/gh_name"
+            android:textColor="?titleColor"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/gh_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center_vertical"
+            android:inputType="text"
+            android:textColor="?textColor"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="10dp"
+            android:background="@color/grey" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/pad_pwd"
+            android:textColor="?titleColor"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/pad_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center_vertical"
+            android:inputType="textPassword"
+            android:textColor="?textColor"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="10dp"
+            android:background="@color/grey" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:text="@string/select_window_count"
+            android:textColor="?titleColor"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/edit_window_count"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:entries="@array/windowCount"
+            android:gravity="center_vertical"
+            android:textColor="?textColor"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="10dp"
+            android:background="@color/grey" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:text="@string/temp_push_time"
+            android:textColor="?titleColor"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edit_push_time"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center_vertical"
+            android:inputType="number"
+            android:textColor="?textColor"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="10dp"
+            android:background="@color/grey" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/alarm_temp_max"
+            android:textColor="?titleColor"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/alarm_temp_max_descr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center_vertical"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="@string/alarm_temp_max_descr"
+            android:textColor="?textColor"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:id="@+id/setting_enable_max"
+            style="@style/option_item_rl"
+            android:layout_width="wrap_content"
+            android:background="@color/transparent" >
+
+            <com.smartfarm.widget.togglebutton.ToggleButton
+                android:id="@+id/setting_btn_max"
+                style="@style/option_item_toggleButton"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp" />
+
+            <TextView
+                style="@style/option_item_text_parent"
+                android:layout_alignBaseline="@id/setting_btn_max"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/setting_btn_max"
+                android:text="@string/temp_enable"
+                android:textColor="?titleColor"
+                android:textSize="@dimen/text_size_16" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/setting_alarm_max"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center_vertical"
+            android:inputType="number"
+            android:textColor="?textColor"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="10dp"
+            android:background="@color/grey" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/alarm_temp_min"
+            android:textColor="?titleColor"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/alarm_temp_min_descr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center_vertical"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="@string/alarm_temp_min_descr"
+            android:textColor="?textColor"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:id="@+id/setting_enable_min"
+            style="@style/option_item_rl"
+            android:layout_width="wrap_content"
+            android:background="@color/transparent" >
+
+            <com.smartfarm.widget.togglebutton.ToggleButton
+                android:id="@+id/setting_btn_min"
+                style="@style/option_item_toggleButton"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp" />
+
+            <TextView
+                style="@style/option_item_text_parent"
+                android:layout_alignBaseline="@id/setting_btn_min"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/setting_btn_min"
+                android:text="@string/temp_enable"
+                android:textColor="?titleColor"
+                android:textSize="@dimen/text_size_16" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/setting_alarm_min"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center_vertical"
+            android:inputType="number"
+            android:textColor="?textColor"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="10dp"
+            android:background="@color/grey" />
+        <!-- 高温转自动功能开始 -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/auto_open_enable"
+            android:textColor="?titleColor"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/auto_open_descr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center_vertical"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="@string/auto_open_descr"
+            android:textColor="?textColor"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/setting_auto_open_descr"
+            style="@style/option_item_rl"
+            android:layout_width="wrap_content"
+            android:background="@color/transparent"
+            android:visibility="gone" >
+
+            <com.smartfarm.widget.togglebutton.ToggleButton
+                android:id="@+id/setting_btn_auto_open_descr"
+                style="@style/option_item_toggleButton"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp" />
+
+            <TextView
+                style="@style/option_item_text_parent"
+                android:layout_alignBaseline="@id/setting_btn_auto_open_descr"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/setting_btn_auto_open_descr"
+                android:text="@string/temp_enable"
+                android:textColor="?titleColor"
+                android:textSize="@dimen/text_size_16" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="10dp"
+            android:background="@color/grey"
+            android:visibility="gone" />
+        <!-- /高温转自动结束 -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/ventilation_time"
+            android:textColor="?titleColor"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/setting_vent_time"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center_vertical"
+            android:inputType="number"
+            android:textColor="?textColor"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="10dp"
+            android:background="@color/grey" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/alarm_msg_enable"
+            android:textColor="?titleColor"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/alarm_msg_enable_descr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center_vertical"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="@string/alarm_msg_enable_descr"
+            android:textColor="?textColor"
+            android:textSize="16sp" />
+        <RelativeLayout
+            android:id="@+id/setting_msg_enable"
+            style="@style/option_item_rl"
+            android:layout_width="wrap_content"
+            android:background="@color/transparent" >
+
+            <com.smartfarm.widget.togglebutton.ToggleButton
+                android:id="@+id/setting_btn_msg_enable"
+                style="@style/option_item_toggleButton"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp" />
+
+            <TextView
+                style="@style/option_item_text_parent"
+                android:layout_alignBaseline="@id/setting_btn_msg_enable"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/setting_btn_msg_enable"
+                android:text="@string/temp_enable"
+                android:textColor="?titleColor"
+                android:textSize="@dimen/text_size_16" />
+        </RelativeLayout>
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="10dp"
+            android:background="@color/grey" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/open_window_time"
+            android:textColor="?titleColor"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center_vertical"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="@string/night_mode_descr"
+            android:textColor="?textColor"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/setting_open_window_time"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/setting_item_selector"
+            android:gravity="center_vertical"
+            android:textColor="?textColor"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="10dp"
+            android:background="@color/grey" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/close_window_time"
+            android:textColor="?titleColor"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/setting_close_window_time"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/setting_item_selector"
+            android:gravity="center_vertical"
+            android:textColor="?textColor"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="10dp"
+            android:background="@color/grey" />
+
+        <TextView
+            android:id="@+id/setting_stalls"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/setting_item_selector"
+            android:gravity="center_vertical"
+            android:text="@string/setting_stalls"
+            android:textColor="@color/sky_blue"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="10dp"
+            android:background="@color/grey" />
+
+        <TextView
+            android:id="@+id/setting_temp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/setting_item_selector"
+            android:gravity="center_vertical"
+            android:text="@string/temp_config"
+            android:textColor="@color/sky_blue"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="10dp"
+            android:background="@color/grey" />
+
+        <TextView
+            android:id="@+id/read_setting"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/setting_item_selector"
+            android:gravity="center_vertical"
+            android:text="@string/read_setting"
+            android:textColor="@color/sky_blue"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</ScrollView>
